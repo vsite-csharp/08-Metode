@@ -14,9 +14,6 @@ namespace Vsite.CSharp.Metode
             Console.WriteLine($"MojaMetoda(int {broj1}, double {broj2})");
         }
 
-        // TODO:002 Pokrenuti program i usporediti ispis s prijašnjim.
-
-        // TODO:003 Pokrenuti i provjeriti testove (4 testa "Preopterećenje_..." moraju proći).
 
 
         static void Main(string[] args)
