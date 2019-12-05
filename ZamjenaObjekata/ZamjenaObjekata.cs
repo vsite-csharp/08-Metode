@@ -44,12 +44,14 @@ namespace Vsite.CSharp.Metode
             object i1 = (object)prvi;
             object i2 = (object)drugi;
             Zamijeni(ref i1, ref i2);
+            prvi = (int)i1;
+            drugi = (int)i2;
             Console.WriteLine("Nakon metode Zamijeni:");
             Console.WriteLine("prvi = '{0}'", prvi);
             Console.WriteLine("drugi = '{0}'", drugi);
         }
 
-
+  
         static void Main(string[] args)
         {
             string prvi = "prvi";
