@@ -4,7 +4,6 @@ namespace Vsite.CSharp.Metode
 {
     class Preopterećenje
     {
-        // TODO:000 Pokrenuti program i provjeriti ispis.
         public static void MojaMetoda(double broj1, double broj2)
         {
             Console.WriteLine($"MojaMetoda(double {broj1}, double {broj2})");
