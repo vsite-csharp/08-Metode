@@ -10,12 +10,12 @@ namespace Vsite.CSharp.Metode
             Console.WriteLine($"MojaMetoda(double {broj1}, double {broj2})");
         }
 
-        // TODO:001 Napisati statičku javno dostupnu preopterećenu verziju metode MojaMetoda koja prima dva argumenta: prvi tipa int, a drugi tipa double. Metoda mora ispisati $"MojaMetoda(int {broj1}, double {broj2})"
+        public static void MojaMetoda(int broj1, double broj2)
+        {
+            Console.WriteLine($"MojaMetoda(int {broj1}, double {broj2})");
+        }
 
 
-        // TODO:002 Pokrenuti program i usporediti ispis s prijašnjim.
-
-        // TODO:003 Pokrenuti i provjeriti testove (4 testa "Preopterećenje_..." moraju proći).
 
 
         static void Main(string[] args)
