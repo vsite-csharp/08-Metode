@@ -12,9 +12,9 @@ namespace Vsite.CSharp.Metode
 
         public static void PozivInicijalizacijeOutParametrom()
         {
-       
-            InicijalizirajBrojNaDeset( out int x);
-            Console.WriteLine($"Nakon InicijalizirajBrojNaDeset: {x}");
+            int x = 0;
+            InicijalizirajBrojNaDeset( out  x);
+            Console.WriteLine($"Nakon InicijalizirajBrojNaDeset: {0}");
         }
 
         public static int UčitavanjeCijelogBroja()
@@ -25,10 +25,7 @@ namespace Vsite.CSharp.Metode
                 Console.WriteLine("Upiši neki cijeli broj:");
                 string text = Console.ReadLine();
                 // TODO:051 Dodati poziv metode int.TryParse koja će upisani znakovni niz pretvoriti u cijeli broj i vratiti to kao rezultat metode UčitavanjeCijelogBroja.
-                ponavljaj = !int.TryParse(text, out int rezultat);
-                if (ponavljaj)
-                    continue;
-                return rezultat;
+              
             }
             return 0;
         }

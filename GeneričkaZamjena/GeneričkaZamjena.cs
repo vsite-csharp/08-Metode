@@ -7,37 +7,37 @@ namespace Vsite.CSharp.Metode
         // TODO:070 Definirati javno dostupnu statičku generičku metodu Zamijeni<T>, koja će biti parametrizirana tipom T i moći raditi tipski sigurnu zamjenu bilo koja dva objekta istog tipa.
 
 
-        private static void IspišiPar(object o1, object o2)
+        private static void Zamjeni<T>(ref T prvi, ref T drugi)
         {
-            Console.WriteLine("{0} - {1}", o1.ToString(), o2.ToString());
+            Console.WriteLine("{0} - {1}", prvi.ToString(), drugi.ToString());
         }
 
         static void Main(string[] args)
         {
             int i1 = 5;
             int i2 = 10;
-            IspišiPar(i1, i2);
+           Zamjeni(ref i1, ref i2);
             // TODO:071 Dodati poziv metode Zamijeni<T> za i1 i i2, pokrenuti program i provjeriti ispis.
 
-            IspišiPar(i1, i2);
+            Zamjeni(ref i1, ref i2);
 
             Console.WriteLine();
 
             double d1 = 1.23;
             double d2 = 4.56;
-            IspišiPar(d1, d2);
+           Zamjeni(ref d1, ref d2);
             // TODO:072 Dodati poziv metode Zamijeni<T> za d1 i d2, pokrenuti program i provjeriti ispis.
 
-            IspišiPar(d1, d2);
+            Zamjeni(ref d1, ref d2);
 
             Console.WriteLine();
 
             string s1 = "Ivica";
             string s2 = "Marica";
-            IspišiPar(s1, s2);
+           Zamjeni(ref s1,ref  s2);
             // TODO:073 Dodati poziv metode Zamijeni<T> za s1 i s2, pokrenuti program i provjeriti ispis.
 
-            IspišiPar(s1, s2);
+            Zamjeni(ref s1, ref s2);
 
             // TODO:074 Pokrenuti i provjeriti testove (3 testa "GeneričkaZamjena_..." moraju proći).
 
