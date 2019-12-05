@@ -4,7 +4,7 @@ namespace Vsite.CSharp.Metode
 {
     class PreopterećenjePodrazumijevaniArg
     {
-        // TODO:010 Pokrenuti program i provjeriti ispise.
+       
         public static int Zbroji(int x = 1, int y = 2, int z = 3)
         {
             return x + y + z;
@@ -12,6 +12,10 @@ namespace Vsite.CSharp.Metode
 
         // TODO:011 Preopteretiti funkciju Zbroji novom funkcijom public static int Zbroji(int x, int y) koja će vratiti zbroj argumenata. 
 
+        public static int Zbroji(int x, int y)
+        {
+            return x + y ;
+        }
 
         // TODO:012 Ponovno pokrenuti programa te usporediti ispise.
 
