@@ -22,7 +22,7 @@ namespace Vsite.CSharp.Metode
             while (ponavljaj)
             {
                 Console.WriteLine("Upiši neki cijeli broj:");
-                // TODO:051 Dodati poziv metode int.TryParse koja će upisani znakovni niz pretvoriti u cijeli broj i vratiti to kao rezultat metode UčitavanjeCijelogBroja.
+                // Dodati poziv metode int.TryParse koja će upisani znakovni niz pretvoriti u cijeli broj i vratiti to kao rezultat metode UčitavanjeCijelogBroja.
                 Console.WriteLine("Unesi broj");
                 string text = Console.ReadLine();
                 ponavljaj = !int.TryParse(text, out int rez);
@@ -32,7 +32,7 @@ namespace Vsite.CSharp.Metode
             return 0;
         }
 
-        // TODO:052 Pokrenuti i provjeriti testove (2 test "OutParametar_..." moraju proći).
+        // Pokrenuti i provjeriti testove (2 test "OutParametar_..." moraju proći).
 
         static void Main(string[] args)
         {
