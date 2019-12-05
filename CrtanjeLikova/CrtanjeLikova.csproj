@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="elipsa.cs" />
     <Compile Include="GeometrijskiLikovi\Crtež.cs" />
     <Compile Include="GeometrijskiLikovi\GeometrijskiLik.cs" />
     <Compile Include="GeometrijskiLikovi\Pravokutnik.cs" />
