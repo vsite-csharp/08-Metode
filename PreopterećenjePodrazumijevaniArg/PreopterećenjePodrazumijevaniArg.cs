@@ -4,7 +4,6 @@ namespace Vsite.CSharp.Metode
 {
     class PreopterećenjePodrazumijevaniArg
     {
-        // TODO:010 Pokrenuti program i provjeriti ispise.
         public static int Zbroji(int x = 1, int y = 2, int z = 3)
         {
             return x + y + z;
