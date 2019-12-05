@@ -9,17 +9,10 @@ namespace Vsite.CSharp.Metode
         {
             return x + y + z;
         }
-
-        // TODO:011 Preopteretiti funkciju Zbroji novom funkcijom public static int Zbroji(int x, int y) koja će vratiti zbroj argumenata. 
-
-
-        // TODO:012 Ponovno pokrenuti programa te usporediti ispise.
-
-        // TODO:013 Provjeriti što bi se dogodilo ako bismo drugoj metodi definirali y s podrazumijevanim argumentom.
-
-        // TODO:014 Pokrenuti i provjeriti testove (3 testa "PreopterećenjePodrazumijevaniArg_..." moraju proći).
-
-
+        public static int Zbroji(int x, int y/*=4*/)
+        {
+            return x + y;
+        }
         static void Main(string[] args)
         {
             Console.WriteLine(Zbroji(5, 6, 7));
