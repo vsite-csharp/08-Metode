@@ -14,7 +14,6 @@ namespace Vsite.CSharp.Metode
 
         private static void UvećavanjeVrijednosnogParametra()
         {
-            // TODO:020 Pokrenuti program, provjeriti ispise te ih obrazložiti.
             int n = 5;
             Console.WriteLine($"Prije metode Uvećaj: {n}");
             Uvećaj(n);
@@ -41,20 +40,13 @@ namespace Vsite.CSharp.Metode
         {
             Osoba janko = new Osoba("Janko", 1);
             Console.WriteLine(janko);
-
-            // TODO:021 Dodati poziv metode ZamijeniOsobuDarkom s prosljeđenom osobom janko i ispisati osobu nakon poziva te metode.
-
-
-            // TODO:022 Pokrenuti program i obrazložiti ispis.
+            ZamijeniOsobuDarkom(janko);
+            Console.WriteLine(janko);
 
             Console.WriteLine();
 
-            // TODO:023 Dodati poziv metode PromijeniIme s prosljeđenom osobom janko i novim imenom "Pero" i ispisati osobu nakon poziva te metode.
-
-
-            // TODO:024 Pokrenuti program i obrazložiti ispis.
-
-            // TODO:025 Pokrenuti i provjeriti testove (test VrijednosniTipKaoArgument_NakonIzlaskaIzMetodeObjektJeNepromijenjen treba proći)
+            PromijeniIme(janko,"Pero");
+            Console.WriteLine(janko);
         }
 
         static void Main(string[] args)
