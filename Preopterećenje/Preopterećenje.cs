@@ -20,7 +20,7 @@ namespace Vsite.CSharp.Metode
             int i2 = 2;
             double d1 = 3;
             double d2 = 4;
-
+            
             MojaMetoda(i1, i2);
             MojaMetoda(i1, d1);
             MojaMetoda(d1, d2);
