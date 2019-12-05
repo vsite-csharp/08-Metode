@@ -15,6 +15,16 @@ namespace Vsite.CSharp.Metode
         private static void UvećavanjeVrijednosnogParametra()
         {
             // TODO:020 Pokrenuti program, provjeriti ispise te ih obrazložiti.
+            /* 
+             * Prije metode Uvecaj: 5
+                U metodi Uvecaj: 6
+                Nakon metode Uvecaj: 5
+
+                Ime: Janko, MB: 1
+
+                GOTOVO!!!
+                baratanje sa preslikom(kopijom) ...funkcije primaju parametre po vrijednosti
+             * */
             int n = 5;
             Console.WriteLine($"Prije metode Uvećaj: {n}");
             Uvećaj(n);
@@ -44,17 +54,29 @@ namespace Vsite.CSharp.Metode
 
             // TODO:021 Dodati poziv metode ZamijeniOsobuDarkom s prosljeđenom osobom janko i ispisati osobu nakon poziva te metode.
 
-
+            ZamijeniOsobuDarkom(janko);
+            Console.WriteLine(janko);
             // TODO:022 Pokrenuti program i obrazložiti ispis.
+            /*  Prije metode Uvecaj: 5
+                U metodi Uvecaj: 6
+                Nakon metode Uvecaj: 5
+
+                Ime: Janko, MB: 1
+                U metodi ZamijeniOsobuDarkom stavljam novu osobu:
+                Ime: Darko, MB: 2
+                Nakon povratka iz metode ZamijeniOsobuDarkom:
+                Ime: Janko, MB: 1
+
+                GOTOVO!!!
+                */
 
             Console.WriteLine();
 
             // TODO:023 Dodati poziv metode PromijeniIme s prosljeđenom osobom janko i novim imenom "Pero" i ispisati osobu nakon poziva te metode.
+            PromijeniIme(janko, "Pero");
+            Console.WriteLine(janko);
 
-
-            // TODO:024 Pokrenuti program i obrazložiti ispis.
-
-            // TODO:025 Pokrenuti i provjeriti testove (test VrijednosniTipKaoArgument_NakonIzlaskaIzMetodeObjektJeNepromijenjen treba proći)
+           
         }
 
         static void Main(string[] args)
@@ -68,3 +90,4 @@ namespace Vsite.CSharp.Metode
         }
     }
 }
+ 
