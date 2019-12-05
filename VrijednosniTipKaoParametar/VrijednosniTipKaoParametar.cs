@@ -14,7 +14,7 @@ namespace Vsite.CSharp.Metode
 
         private static void UvećavanjeVrijednosnogParametra()
         {
-            // TODO:020 Pokrenuti program, provjeriti ispise te ih obrazložiti.
+            
             int n = 5;
             Console.WriteLine($"Prije metode Uvećaj: {n}");
             Uvećaj(n);

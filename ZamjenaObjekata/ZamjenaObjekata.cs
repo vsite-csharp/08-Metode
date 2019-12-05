@@ -50,7 +50,7 @@ namespace Vsite.CSharp.Metode
             Console.WriteLine("drugi = '{0}'", drugi);
         }
 
-        // TODO:063 Pokrenuti i provjeriti testove (2 testa "ZamjenaObjekata_..." moraju proći)
+       
 
         static void Main(string[] args)
         {

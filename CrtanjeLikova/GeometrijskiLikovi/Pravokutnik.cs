@@ -34,4 +34,9 @@ namespace Vsite.CSharp.Metode.GeometrijskiLikovi
         private float širina;
         private float visina;
     }
+
+    protected override void Popuni(Graphics g)
+    {
+        g.FillRectangle(Bru)
+    }
 }
