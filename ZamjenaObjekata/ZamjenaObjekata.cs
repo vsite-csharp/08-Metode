@@ -5,7 +5,7 @@ namespace Vsite.CSharp.Metode
     class ZamjenaObjekata
     {
 
-        static void Zamijeni(string s1, string s2)
+        static void Zamijeni(ref string s1, ref string  s2)
         {
             string temp = s2;
             s2 = s1;
