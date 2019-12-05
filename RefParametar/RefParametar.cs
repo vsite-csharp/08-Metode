@@ -11,7 +11,7 @@ namespace Vsite.CSharp.Metode
             x += 10;
         }
 
-        public static int PozivMetodeDodajDeset(int broj)
+        public static int PozivMetodeDodajDeset( int broj)
         {
             Console.WriteLine($"Prije metode DodajDeset: {broj}");
             DodajDeset( broj);
@@ -19,15 +19,15 @@ namespace Vsite.CSharp.Metode
             return broj;
         }
 
-        static void PromijeniOsobu(Osoba osoba, string novoIme, int noviMatičniBroj)
+        static void PromijeniOsobu(ref Osoba osoba, string novoIme, int noviMatičniBroj)
         {
             osoba = new Osoba(novoIme, noviMatičniBroj);
         }
 
-        public static Osoba PozivMetodePromijeniOsobu(Osoba osoba, string novoIme, int noviMatičniBroj)
+        public static Osoba PozivMetodePromijeniOsobu( Osoba osoba, string novoIme, int noviMatičniBroj)
         {
             Console.WriteLine($"Prije metode PromijeniOsobu: {osoba}");
-            PromijeniOsobu( osoba, novoIme, noviMatičniBroj);
+            PromijeniOsobu(ref osoba, novoIme, noviMatičniBroj);
             Console.WriteLine($"Nakon metode PromijeniOsobu: {osoba}");
             return osoba;
         }
