@@ -4,7 +4,7 @@ namespace Vsite.CSharp.Metode
 {
     class GeneričkaZamjena
     {
-        static void Zamijeni<T>(ref T prvi, ref T drugi)
+        public static void Zamijeni<T>(ref T prvi, ref T drugi)
         {
             var temp = drugi;
             drugi = prvi;
