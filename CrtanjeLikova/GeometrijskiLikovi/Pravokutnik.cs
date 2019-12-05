@@ -12,10 +12,10 @@ namespace Vsite.CSharp.Metode.GeometrijskiLikovi
             this.visina = visina;
         }
 
-        public override void Nacrtaj(Graphics g)
-        {
-            g.DrawRectangle(Pens.Black, x, y, širina, visina);
-        }
+        //public override void Nacrtaj(Graphics g)
+        //{
+        //    g.DrawRectangle(Pens.Black, x, y, širina, visina);
+        //}
 
         public override void Pomakni(float deltaX, float deltaY)
         {
@@ -27,6 +27,16 @@ namespace Vsite.CSharp.Metode.GeometrijskiLikovi
         {
             širina *= faktor;
             visina *= faktor;
+        }
+
+        protected override void Popuni(Graphics g)
+        {
+            g.FillRectangle(Brushes.LemonChiffon, x, y, širina, visina);
+        }
+
+        protected override void NacrtajOkvir(Graphics g)
+        {
+            g.DrawRectangle(Pens.Black, x, y, širina, visina);
         }
 
         private float x;
