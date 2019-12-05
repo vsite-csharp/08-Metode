@@ -28,6 +28,7 @@ namespace Vsite.CSharp.Metode
                     continue;
                 return rezultat;
             }
+            return 0;
         }
 
         // TODO:052 Pokrenuti i provjeriti testove (2 test "OutParametar_..." moraju proći).

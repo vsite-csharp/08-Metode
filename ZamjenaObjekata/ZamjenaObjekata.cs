@@ -14,6 +14,12 @@ namespace Vsite.CSharp.Metode
             s1 = temp;
         }
 
+        static void Zamijeni(ref object s1, ref object s2)
+        {
+            object temp = s2;
+            s2 = s1;
+            s1 = temp;
+        }
         public static void ZamjenaStringova(string prvi, string drugi)
         {
             Console.WriteLine("Prije metode Zamijeni:");
