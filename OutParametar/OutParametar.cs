@@ -24,7 +24,6 @@ namespace Vsite.CSharp.Metode
                 Console.WriteLine("Upiši neki cijeli broj:");
                 int broj;
                 broj = Console.Read();
-                // TODO:051 Dodati poziv metode int.TryParse koja će upisani znakovni niz pretvoriti u cijeli broj i vratiti to kao rezultat metode UčitavanjeCijelogBroja.
                 string text = Console.ReadLine();
                 ponavljaj = !int.TryParse(text,out int rezultat);
                 if (ponavljaj)
@@ -36,7 +35,6 @@ namespace Vsite.CSharp.Metode
             return 0;
         }
 
-        // TODO:052 Pokrenuti i provjeriti testove (2 test "OutParametar_..." moraju proći).
 
         static void Main(string[] args)
         {
