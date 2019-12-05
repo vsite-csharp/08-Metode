@@ -3,7 +3,6 @@ using System.Drawing;
 
 namespace Vsite.CSharp.Metode.GeometrijskiLikovi
 {
-    // TODO:090 Pokrenuti program i provjeriti funkcioiranje tipki.
     class Crtež
     {
         public Crtež()
@@ -41,6 +40,7 @@ namespace Vsite.CSharp.Metode.GeometrijskiLikovi
             DodajLik(new Pravokutnik(150, 100, 50, 150));
 
             // TODO:091 U projekt dodati novu klasu Elipsa, izvedenu iz klase GeometrijskiLik te implemenirati potrebne metode.
+
 
             // TODO:092 Otkomentirati donje naredbe i pokrenuti program.
             //DodajLik(new Elipsa(80, 60, 60, 40));
