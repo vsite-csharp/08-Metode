@@ -6,21 +6,26 @@ namespace Vsite.CSharp.Metode
     {
         
 
-        // TODO:061 Promijeniti metodu tako da se zamjena odrazi u pozivajućem kodu.
-        static void Zamijeni(string s1, string s2)
+        static void Zamijeni(ref string s1, ref string s2)
         {
             string temp = s2;
             s2 = s1;
             s1 = temp;
         }
+		static void Zamijeni(ref object s1, ref object s2)
+		{
+			var temp = s2;
+			s2 = s1;
+			s1 = temp;
+		}
 
-        public static void ZamjenaStringova(string prvi, string drugi)
+		public static void ZamjenaStringova(string prvi, string drugi)
         {
             Console.WriteLine("Prije metode Zamijeni:");
             Console.WriteLine("prvi = '{0}'", prvi);
             Console.WriteLine("drugi = '{0}'", drugi);
 
-            Zamijeni(prvi, drugi);
+            Zamijeni(ref prvi, ref drugi);
 
             Console.WriteLine("Nakon metode Zamijeni:");
             Console.WriteLine("prvi = '{0}'", prvi);
@@ -33,14 +38,16 @@ namespace Vsite.CSharp.Metode
             Console.WriteLine("prvi = '{0}'", prvi);
             Console.WriteLine("drugi = '{0}'", drugi);
 
-            // TODO:062 Preopteretiti metodu Zamijeni tako da umjesto tipa string prima tip object i tako podržava zamjenu bilo kojeg tipa objekta. Dodati poziv te metode za 2 argumenta tipa int te provjeriti funkcionalnost.
-
+			object i1 = (object)prvi;
+			object i2 = (object)drugi;
+			Zamijeni(ref i1, ref i2);
+			prvi = (int)i1;
+			drugi = (int)i2;
             Console.WriteLine("Nakon metode Zamijeni:");
             Console.WriteLine("prvi = '{0}'", prvi);
             Console.WriteLine("drugi = '{0}'", drugi);
         }
 
-        // TODO:063 Pokrenuti i provjeriti testove (2 testa "ZamjenaObjekata_..." moraju proći)
 
         static void Main(string[] args)
         {
