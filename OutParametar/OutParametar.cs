@@ -4,7 +4,6 @@ namespace Vsite.CSharp.Metode
 {
     class OutParametar
     {
-        // TODO:050 Dodati parametru metode modifikator out te promijeniti metodu PozivInicijalizacijeOutParametrom tako da se može prevesti i izvesti.
         static void InicijalizirajBrojNaDeset(out int x)
         {
             x = 10;

@@ -6,7 +6,6 @@ namespace Vsite.CSharp.Metode
 
     class RefParametar
     {
-        // TODO:040 Dodati parametru metode modifikator ref tako da se argument x metodi prenosi po referenci te promijeniti poziv metode. Pokrenuti program i provjeriti ispis.
         static void DodajDeset(ref int x)
         {
             x += 10;
