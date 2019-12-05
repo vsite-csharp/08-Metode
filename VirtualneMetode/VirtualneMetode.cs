@@ -18,14 +18,27 @@ namespace Vsite.CSharp.Metode
     // TODO:081 U klase Izvedena1 i Izvedena2 dodajte javno dostupne metode IspišiImeObično koje će ispisati "Izvedena1 Obično", odnosno "Izvedena2 Obično". Pokrenite program i usporedite ispise s prijašnjima.
 
     // TODO:082 U klase Izvedena1 i Izvedena2 dodajte javno dostupne metode IspišiImeVirtualno koje će ispisati "Izvedena1 Virtualno", odnosno "Izvedena2 Virtualno". Pokrenite program i usporedite ispise s prijašnjima.
+
+
     class Izvedena1 : Bazna
     {
+        public new void IspišiImeObično()
+        {
+            Console.WriteLine("Izvedena1 obično"); 
+        }
 
+        public override void IspišiImeVirtualno()
+        {
+            Console.WriteLine("Izvedena2 virtualno");
+        }
     }
 
     class Izvedena2 : Bazna
     {
-
+        public new void IspišiImeObično()
+        {
+            Console.WriteLine("Izvedena2 Obično");
+        }
     }
 
     class VirtualneMetode

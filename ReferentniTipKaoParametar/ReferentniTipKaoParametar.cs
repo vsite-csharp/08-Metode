@@ -35,13 +35,6 @@ namespace Vsite.CSharp.Metode
             Console.WriteLine();
             PromijeniIme(janko, "Pero");
             Console.WriteLine(janko);
-
-            
-
-
-            // TODO:033 Pokrenuti program i obrazložiti ispis.
-
-            // TODO:034 Pokrenuti i provjeriti testove (test ReferentiTipKaoArgument_NakonIzlaskaIzMetodeObjektJeNepromijenjen treba proći)
         }
 
         static void Main(string[] args)

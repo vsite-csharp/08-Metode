@@ -32,7 +32,7 @@ namespace Vsite.CSharp.Metode
             return 0;
         }
 
-        // TODO:052 Pokrenuti i provjeriti testove (2 test "OutParametar_..." moraju proći).
+     
 
         static void Main(string[] args)
         {
