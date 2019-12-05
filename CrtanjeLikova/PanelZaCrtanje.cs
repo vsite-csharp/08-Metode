@@ -23,7 +23,7 @@ namespace Vsite.CSharp.Metode
             Invalidate();
         }
 
-        protected override void OnPaint(PaintEventArgs pe)
+        protected override void OnPaint(PaintEventArgs pe) //obratiti pozornost na ovo...bitno kod npr resize
         {
             crtež.Iscrtaj(pe.Graphics);
             base.OnPaint(pe);
