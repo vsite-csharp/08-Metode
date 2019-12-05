@@ -54,9 +54,9 @@ namespace Vsite.CSharp.Metode
             PromijeniIme(janko, "Pero");
             Console.WriteLine(janko);
 
-            // TODO:024 Pokrenuti program i obrazložiti ispis.
+            // Pokrenuti program i obrazložiti ispis.
 
-            // TODO:025 Pokrenuti i provjeriti testove (test VrijednosniTipKaoArgument_NakonIzlaskaIzMetodeObjektJeNepromijenjen treba proći)
+            // Pokrenuti i provjeriti testove (test VrijednosniTipKaoArgument_NakonIzlaskaIzMetodeObjektJeNepromijenjen treba proći)
         }
 
         static void Main(string[] args)
