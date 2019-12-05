@@ -15,9 +15,7 @@ namespace Vsite.CSharp.Metode
         }
 
 
-        // TODO:013 Provjeriti što bi se dogodilo ako bismo drugoj metodi definirali y s podrazumijevanim argumentom.
-
-        // TODO:014 Pokrenuti i provjeriti testove (3 testa "PreopterećenjePodrazumijevaniArg_..." moraju proći).
+      
 
 
         static void Main(string[] args)
