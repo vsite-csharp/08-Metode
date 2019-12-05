@@ -14,7 +14,8 @@ namespace Vsite.CSharp.Metode
 
         public class Izvedena : Bazna
         {
-            // TODO:100 Dodati javno dostupnu metodu void PredstaviSe() koja će ispisati "Izvedena klasa, izvedena iz:" te će pozvati PredstaviSe iz klase Bazna.
+            // TODO:100 Dodati javno dostupnu metodu void PredstaviSe() koja će ispisati "Izvedena klasa, 
+            //izvedena iz:" te će pozvati PredstaviSe iz klase Bazna.
 
         }
 
