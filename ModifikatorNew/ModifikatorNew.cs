@@ -17,7 +17,7 @@ namespace Vsite.CSharp.Metode
             // TODO:100 Dodati javno dostupnu metodu void PredstaviSe() koja će ispisati "Izvedena klasa, izvedena iz:" te će pozvati PredstaviSe iz klase Bazna.
             public new void PredstaviSe()
             {
-                Console.WriteLine("Izvedena klasa, izvedena iz:");
+                Console.WriteLine("Izvedena klasa, izvedena iz:"); base.PredstaviSe();
             }
         }
 
