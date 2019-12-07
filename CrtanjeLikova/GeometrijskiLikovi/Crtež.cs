@@ -35,14 +35,12 @@ namespace Vsite.CSharp.Metode.GeometrijskiLikovi
 
         private void SložiOgledniCrtež()
         {
-            DodajLik(new Pravokutnik(10, 10, 40, 30));
-            DodajLik(new Pravokutnik(80, 120, 150, 40));
-            DodajLik(new Pravokutnik(150, 100, 50, 150));
+            DodajLik(new Pravokutnik(10, 10, 40, 30, Pens.Black, Brushes.Blue));
+            DodajLik(new Pravokutnik(80, 120, 150, 40, Pens.Black, Brushes.Red));
+            DodajLik(new Pravokutnik(150, 100, 50, 150, Pens.Black, Brushes.Green));
 
-            DodajLik(new Elipsa(80, 60, 60, 40));
-            DodajLik(new Elipsa(180, 80, 50, 80));
-
-            // TODO:097 Dodati u gornjim konstruktorima boju popune i boju okvira za svaki lik te pokrenuti program.
+            DodajLik(new Elipsa(80, 60, 60, 40, Pens.Black, Brushes.DarkBlue));
+            DodajLik(new Elipsa(180, 80, 50, 80, Pens.Black, Brushes.DarkGreen));
         }
 
         private List<GeometrijskiLik> likovi = new List<GeometrijskiLik>();

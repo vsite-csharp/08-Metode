@@ -12,8 +12,6 @@
             NacrtajOkvir(g);
         }
 
-        // TODO:096 Dodati u konstruktore boju okvira i boju popune te ih upotrijebiti za iscrtavanje.
-
         public abstract void Pomakni(float deltaX, float deltaY);
 
         public abstract void Uvećaj(float faktor);
