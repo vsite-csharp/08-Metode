@@ -12,7 +12,7 @@ namespace Vsite.CSharp.Metode.GeometrijskiLikovi
             this.visina = visina;
         }
 
-        protected public override void NacrtajOkvir(Graphics g)
+        protected  override void NacrtajOkvir(Graphics g)
         {
             g.DrawRectangle(Pens.Black, x, y, širina, visina);
         }
