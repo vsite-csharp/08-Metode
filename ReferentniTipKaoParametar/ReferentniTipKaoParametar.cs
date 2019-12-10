@@ -33,8 +33,12 @@ namespace Vsite.CSharp.Metode
 
 
             Console.WriteLine();
+
             PromijeniIme(janko, "Pero");
             Console.WriteLine(janko);
+
+
+
         }
 
         static void Main(string[] args)

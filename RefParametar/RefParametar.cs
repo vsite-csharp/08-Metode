@@ -6,7 +6,6 @@ namespace Vsite.CSharp.Metode
 
     class RefParametar
     {
-        
         static void DodajDeset(ref int x)
         {
             x += 10;
@@ -20,7 +19,6 @@ namespace Vsite.CSharp.Metode
             return broj;
         }
 
-       
         static void PromijeniOsobu(ref Osoba osoba, string novoIme, int noviMatičniBroj)
         {
             osoba = new Osoba(novoIme, noviMatičniBroj);
@@ -34,7 +32,6 @@ namespace Vsite.CSharp.Metode
             return osoba;
         }
 
-       
 
         static void Main(string[] args)
         {

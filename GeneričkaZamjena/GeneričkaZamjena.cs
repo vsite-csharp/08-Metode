@@ -1,15 +1,15 @@
-﻿using System;
+﻿
+using System;
 
 namespace Vsite.CSharp.Metode
 {
     class GeneričkaZamjena
     {
-       
         public static void Zamijeni<T>(ref T prvi, ref T drugi)
         {
             var temp = prvi;
             prvi = drugi;
-            drugi = temp; 
+            drugi = temp;
         }
 
         private static void IspišiPar(object o1, object o2)
@@ -22,8 +22,7 @@ namespace Vsite.CSharp.Metode
             int i1 = 5;
             int i2 = 10;
             IspišiPar(i1, i2);
-            
-            Zamijeni<int>(ref i1, ref i2);
+            Zamijeni(ref i1, ref i2);
             IspišiPar(i1, i2);
 
             Console.WriteLine();
@@ -31,7 +30,6 @@ namespace Vsite.CSharp.Metode
             double d1 = 1.23;
             double d2 = 4.56;
             IspišiPar(d1, d2);
-           
             Zamijeni(ref d1, ref d2);
             IspišiPar(d1, d2);
 
@@ -40,11 +38,12 @@ namespace Vsite.CSharp.Metode
             string s1 = "Ivica";
             string s2 = "Marica";
             IspišiPar(s1, s2);
-           
             Zamijeni(ref s1, ref s2);
             IspišiPar(s1, s2);
 
-            
+
+            // TODO:075 Pogledati generirani kod metode Zamijeni alatom ILDASM.
+
             Console.WriteLine();
 
             Console.WriteLine("GOTOVO!!!");

@@ -1,4 +1,5 @@
-﻿using System;
+﻿
+using System;
 
 namespace Vsite.CSharp.Metode
 {
@@ -14,7 +15,6 @@ namespace Vsite.CSharp.Metode
 
         private static void UvećavanjeVrijednosnogParametra()
         {
-            
             int n = 5;
             Console.WriteLine($"Prije metode Uvećaj: {n}");
             Uvećaj(n);
@@ -43,16 +43,17 @@ namespace Vsite.CSharp.Metode
             Console.WriteLine(janko);
 
             ZamijeniOsobuDarkom(janko);
+            Console.WriteLine(janko);
+
+
 
             Console.WriteLine();
 
-            
             PromijeniIme(janko, "Pero");
             Console.WriteLine(janko);
 
-          
 
-         
+
         }
 
         static void Main(string[] args)

@@ -7,13 +7,8 @@ using System.Threading.Tasks;
 
 namespace Vsite.CSharp.Metode.GeometrijskiLikovi
 {
- 
     class Elipsa : GeometrijskiLik
     {
-        private float x;
-        private float y;
-        private float širina;
-        private float visina;
         public Elipsa(float x, float y, float širina, float visina)
         {
             this.x = x;
@@ -21,7 +16,8 @@ namespace Vsite.CSharp.Metode.GeometrijskiLikovi
             this.širina = širina;
             this.visina = visina;
         }
-        public override void Nacrtaj(Graphics g)
+
+        protected override void NacrtajOkvir(Graphics g)
         {
             g.DrawEllipse(Pens.Crimson, x, y, širina, visina);
         }
@@ -40,7 +36,13 @@ namespace Vsite.CSharp.Metode.GeometrijskiLikovi
 
         protected override void Popuni(Graphics g)
         {
-            g.FillEllipse(Brushes.DarkTurquoise, x, y širina, visina);
-    }
+            g.FillEllipse(Brushes.Chocolate, x, y, širina, visina);
+        }
+
+        private float x;
+        private float y;
+        private float širina;
+        private float visina;
+
     }
 }

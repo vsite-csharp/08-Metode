@@ -3,12 +3,11 @@
 namespace Vsite.CSharp.Metode
 {
    
-    static class MetodeProširenj
+    static class MojeMetodeProširenja
     {
         public static int BrojRiječi(this string s)
         {
-            return s.Split(new char[] { ' ', '.', ',', '!', '?' }, StringSplitOptions.RemoveEmptyEntries).Length;
-            
+            return s.Split(new char[] { ' ', '-', ',', '.', '!', '?' }, StringSplitOptions.RemoveEmptyEntries).Length;
         }
     }
 
@@ -17,11 +16,10 @@ namespace Vsite.CSharp.Metode
     {
         public static int DajBrojRiječi(string tekst)
         {
-
             return tekst.BrojRiječi();
         }
 
-       
+      
 
         static void Main(string[] args)
         {

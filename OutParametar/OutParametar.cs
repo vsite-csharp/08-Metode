@@ -4,7 +4,6 @@ namespace Vsite.CSharp.Metode
 {
     class OutParametar
     {
-      
         static void InicijalizirajBrojNaDeset(out int x)
         {
             x = 10;
@@ -21,10 +20,9 @@ namespace Vsite.CSharp.Metode
             bool ponavljaj = true;
             while (ponavljaj)
             {
-                string text = Console.ReadLine(); 
                 Console.WriteLine("Upiši neki cijeli broj:");
-                
-                ponavljaj = int.TryParse(text, out int rezultat);
+                string text = Console.ReadLine();
+                ponavljaj = !int.TryParse(text, out int rezultat);
                 if (ponavljaj)
                     continue;
                 return rezultat;
@@ -32,7 +30,6 @@ namespace Vsite.CSharp.Metode
             return 0;
         }
 
-     
 
         static void Main(string[] args)
         {

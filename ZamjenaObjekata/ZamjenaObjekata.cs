@@ -4,9 +4,7 @@ namespace Vsite.CSharp.Metode
 {
     class ZamjenaObjekata
     {
-        
 
-       
         static void Zamijeni(ref string s1, ref string s2)
         {
             string temp = s2;
@@ -14,9 +12,9 @@ namespace Vsite.CSharp.Metode
             s1 = temp;
         }
 
-        static void Zamijeni(ref object s1, ref object  s2)
+        static void Zamijeni(ref object s1, ref object s2)
         {
-           var temp = s2;
+            var temp = s2;
             s2 = s1;
             s1 = temp;
         }
@@ -40,6 +38,9 @@ namespace Vsite.CSharp.Metode
             Console.WriteLine("prvi = '{0}'", prvi);
             Console.WriteLine("drugi = '{0}'", drugi);
 
+
+
+
             object i1 = (object)prvi;
             object i2 = (object)drugi;
             Zamijeni(ref i1, ref i2);
@@ -50,7 +51,6 @@ namespace Vsite.CSharp.Metode
             Console.WriteLine("drugi = '{0}'", drugi);
         }
 
-       
 
         static void Main(string[] args)
         {
