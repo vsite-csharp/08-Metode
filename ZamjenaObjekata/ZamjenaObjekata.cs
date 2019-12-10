@@ -65,4 +65,4 @@ namespace Vsite.CSharp.Metode
             Console.ReadKey(true);
         }
     }
-}
+} 
