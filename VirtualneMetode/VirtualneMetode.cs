@@ -11,7 +11,7 @@ namespace Vsite.CSharp.Metode
 
         public virtual void IspišiImeVirtualno()
         {
-            Console.WriteLine("Bazna Virtualno");
+            Console.WriteLine("Bazna Virtualno"); 
         }
     }
 
