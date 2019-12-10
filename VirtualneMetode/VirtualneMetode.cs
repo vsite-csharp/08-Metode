@@ -22,7 +22,7 @@ namespace Vsite.CSharp.Metode
     {
         public new void IspišiImeObično()
         {
-            Console.WriteLine("Izvedena1 Obično");
+            Console.WriteLine("Izvedena1 Obično"); 
         }
         public override void IspišiImeVirtualno()
         {
