@@ -9,16 +9,19 @@ namespace Vsite.CSharp.Metode.GeometrijskiLikovi
 {
     class Elipsa : GeometrijskiLik
     {
-        public Elipsa(float x, float y, float širina, float visina)
+        public Elipsa(float x, float y, float širina, float visina, Pen okvir, Brush boja)
         {
             this.x = x;
             this.y = y;
             this.širina = širina;
             this.visina = visina;
+            pen = okvir;
+            brush = boja;
+
         }
         protected override void NacrtajOkvir(Graphics g)
         {
-            g.DrawEllipse(Pens.Crimson, x, y, širina, visina);
+            g.DrawEllipse(pen, x, y, širina, visina);
         }
 
         public override void Pomakni(float deltaX, float deltaY)
@@ -35,12 +38,14 @@ namespace Vsite.CSharp.Metode.GeometrijskiLikovi
 
         protected override void Popuni(Graphics g)
         {
-            g.FillEllipse(Brushes.AntiqueWhite, x, y, širina, visina);
+            g.FillEllipse(brush, x, y, širina, visina);
         }
 
         private float x;
         private float y;
         private float širina;
         private float visina;
+        private Pen pen;
+        private Brush brush;
     }
 }
