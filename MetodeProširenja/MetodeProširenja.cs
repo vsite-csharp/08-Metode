@@ -16,11 +16,11 @@ namespace Vsite.CSharp.Metode
     {
         public static int DajBrojRiječi(string tekst)
         {
-            // TODO:121 Zamijeniti povratnu vrijednost rezultatom metode proširenja BrojRiječi. Pokrenuti program i provjeriti ispise.
+            // Zamijeniti povratnu vrijednost rezultatom metode proširenja BrojRiječi. Pokrenuti program i provjeriti ispise.
             return tekst.BrojRiječi();
         }
 
-        // TODO:122 Pokrenuti i provjeriti testove (4 testa "MetodaProširenja_..." moraju proći).
+        // Pokrenuti i provjeriti testove (4 testa "MetodaProširenja_..." moraju proći).
 
         static void Main(string[] args)
         {
