@@ -4,8 +4,13 @@ namespace Vsite.CSharp.Metode
 {
     class GeneričkaZamjena
     {
-        // TODO:070 Definirati javno dostupnu statičku generičku metodu Zamijeni<T>, koja će biti parametrizirana tipom T i moći raditi tipski sigurnu zamjenu bilo koja dva objekta istog tipa.
-
+        // Definirati javno dostupnu statičku generičku metodu Zamijeni<T>, koja će biti parametrizirana tipom T i moći raditi tipski sigurnu zamjenu bilo koja dva objekta istog tipa.
+        public static void Zamijeni<T>(ref T prvi, ref T drugi)
+        {
+            T priv = prvi;
+            prvi = drugi;
+            drugi = priv;
+        }
 
         private static void IspišiPar(object o1, object o2)
         {
@@ -17,8 +22,8 @@ namespace Vsite.CSharp.Metode
             int i1 = 5;
             int i2 = 10;
             IspišiPar(i1, i2);
-            // TODO:071 Dodati poziv metode Zamijeni<T> za i1 i i2, pokrenuti program i provjeriti ispis.
-
+            // Dodati poziv metode Zamijeni<T> za i1 i i2, pokrenuti program i provjeriti ispis.
+            Zamijeni<int>(ref i1, ref i2);
             IspišiPar(i1, i2);
 
             Console.WriteLine();
@@ -26,8 +31,8 @@ namespace Vsite.CSharp.Metode
             double d1 = 1.23;
             double d2 = 4.56;
             IspišiPar(d1, d2);
-            // TODO:072 Dodati poziv metode Zamijeni<T> za d1 i d2, pokrenuti program i provjeriti ispis.
-
+            // Dodati poziv metode Zamijeni<T> za d1 i d2, pokrenuti program i provjeriti ispis.
+            Zamijeni<double>(ref d1, ref d2);
             IspišiPar(d1, d2);
 
             Console.WriteLine();
@@ -39,7 +44,7 @@ namespace Vsite.CSharp.Metode
 
             IspišiPar(s1, s2);
 
-            // TODO:074 Pokrenuti i provjeriti testove (3 testa u grupi TestGeneričkeZamjene moraju proći).
+            // Pokrenuti i provjeriti testove (3 testa u grupi TestGeneričkeZamjene moraju proći).
 
             // TODO:075 Pogledati generirani kod metode Zamijeni alatom ILDASM.
 
