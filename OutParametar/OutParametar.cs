@@ -4,7 +4,7 @@ namespace Vsite.CSharp.Metode
 {
     class OutParametar
     {
-        // TODO:050 Dodati parametru metode modifikator out te promijeniti metodu PozivInicijalizacijeOutParametrom tako da se može prevesti i izvesti.
+        // Dodati parametru metode modifikator out te promijeniti metodu PozivInicijalizacijeOutParametrom tako da se može prevesti i izvesti.
         static void InicijalizirajBrojNaDeset(out int x)
         {
             x = 10;
@@ -23,14 +23,14 @@ namespace Vsite.CSharp.Metode
             {
                 Console.WriteLine("Upiši neki cijeli broj:");
                 string tekst = Console.ReadLine();
-                // TODO:051 Dodati poziv metode int.TryParse koja će upisani znakovni niz pretvoriti u cijeli broj i vratiti to kao rezultat metode UčitavanjeCijelogBroja.
+                // Dodati poziv metode int.TryParse koja će upisani znakovni niz pretvoriti u cijeli broj i vratiti to kao rezultat metode UčitavanjeCijelogBroja.
                 if (int.TryParse(tekst, out int rezultat));
                     return rezultat;
                 
             }
         }
 
-        // TODO:052 Pokrenuti i provjeriti testove (oba testa u grupi TestOutParametar moraju proći).
+        // Pokrenuti i provjeriti testove (oba testa u grupi TestOutParametar moraju proći).
         static void Main(string[] args)
         {
 
