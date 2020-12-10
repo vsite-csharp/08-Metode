@@ -4,12 +4,12 @@ namespace Vsite.CSharp.Metode.GeometrijskiLikovi
 {
     internal class Elipsa : GeometrijskiLik
     {
-        private int x;
-        private int y;
-        private int širina;
-        private int visina;
+        private float x;
+        private float y;
+        private float širina;
+        private float visina;
 
-        public Elipsa(int x, int y, int širina, int visina)
+        public Elipsa(float x, float y, float širina, float visina)
         {
             this.x = x;
             this.y = y;
@@ -19,17 +19,19 @@ namespace Vsite.CSharp.Metode.GeometrijskiLikovi
 
         public override void Nacrtaj(Graphics g)
         {
-            throw new System.NotImplementedException();
+            g.DrawRectangle(Pens.Black, x, y, širina, visina);
         }
 
         public override void Pomakni(float deltaX, float deltaY)
         {
-            throw new System.NotImplementedException();
+            x += deltaX;
+            y += deltaY;
         }
 
         public override void Uvećaj(float faktor)
         {
-            throw new System.NotImplementedException();
+            širina *= faktor;
+            visina *= faktor;
         }
 
         protected override void Popuni()
