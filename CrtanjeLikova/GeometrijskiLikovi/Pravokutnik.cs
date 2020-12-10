@@ -15,6 +15,7 @@ namespace Vsite.CSharp.Metode.GeometrijskiLikovi
         public override void Nacrtaj(Graphics g)
         {
             g.DrawRectangle(Pens.Black, x, y, širina, visina);
+            g.FillRectangle(Brushes.Beige, x, y, širina, visina);
         }
 
         public override void Pomakni(float deltaX, float deltaY)
