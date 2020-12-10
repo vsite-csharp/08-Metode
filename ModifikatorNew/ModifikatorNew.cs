@@ -14,12 +14,17 @@ namespace Vsite.CSharp.Metode
 
         public class Izvedena : Bazna
         {
-            // TODO:100 Dodati javno dostupnu metodu void PredstaviSe() koja će ispisati "Izvedena klasa, izvedena iz:" te će pozvati PredstaviSe iz klase Bazna.
-
+            //Dodati javno dostupnu metodu void PredstaviSe() koja će ispisati "Izvedena klasa, izvedena iz:" te će pozvati PredstaviSe iz klase Bazna.
+            public void PredstaviSe()
+            {
+                Console.WriteLine("Izvedena klasa, izvedena iz:");
+                Bazna bazna = new Bazna();
+                bazna.PredstaviSe();
+            }
         }
 
-        // TODO:101 Izvesti program i usporediti donje ispise.
-        // TODO:102 Pokrenuti i provjeriti testove (3 testa u grupi TestModifikatoraNew moraju proći)
+        //Izvesti program i usporediti donje ispise.
+        //Pokrenuti i provjeriti testove (3 testa u grupi TestModifikatoraNew moraju proći)
         static void Main(string[] args)
         {
             Bazna bazna = new Izvedena();

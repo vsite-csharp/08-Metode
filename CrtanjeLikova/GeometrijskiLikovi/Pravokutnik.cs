@@ -29,6 +29,11 @@ namespace Vsite.CSharp.Metode.GeometrijskiLikovi
             visina *= faktor;
         }
 
+        protected override void Popuni()
+        {
+            throw new System.NotImplementedException();
+        }
+
         private float x;
         private float y;
         private float širina;
