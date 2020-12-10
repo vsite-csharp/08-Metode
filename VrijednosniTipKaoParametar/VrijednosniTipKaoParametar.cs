@@ -41,20 +41,22 @@ namespace Vsite.CSharp.Metode
             Osoba janko = new Osoba("Janko", 1);
             Console.WriteLine(janko);
 
-            // TODO:021 Dodati poziv metode ZamijeniOsobuDarkom s prosljeđenom osobom janko i ispisati osobu nakon poziva te metode.
-
-            // TODO:022 Pokrenuti program i obrazložiti ispis.
+            //Dodati poziv metode ZamijeniOsobuDarkom s prosljeđenom osobom janko i ispisati osobu nakon poziva te metode.
+            ZamijeniOsobuDarkom(janko);
+            Console.WriteLine(janko);
+            //Pokrenuti program i obrazložiti ispis.
 
             Console.WriteLine();
 
-            // TODO:023 Dodati poziv metode PromijeniIme s prosljeđenom osobom janko i novim imenom "Pero" i ispisati osobu nakon poziva te metode.
+            //Dodati poziv metode PromijeniIme s prosljeđenom osobom janko i novim imenom "Pero" i ispisati osobu nakon poziva te metode.
+            PromijeniIme(janko, "Pero");
+            Console.WriteLine(janko);
+            //Pokrenuti program i obrazložiti ispis.
 
-            // TODO:024 Pokrenuti program i obrazložiti ispis.
-
-            // TODO:025 Pokrenuti i provjeriti testove (test TestPromjeneArgumentaVrijednosnogTipa treba proći)
+            //Pokrenuti i provjeriti testove (test TestPromjeneArgumentaVrijednosnogTipa treba proći)
         }
 
-        // TODO:020 Pokrenuti program, provjeriti ispise te ih obrazložiti.
+        //Pokrenuti program, provjeriti ispise te ih obrazložiti.
         static void Main(string[] args)
         {
             UvećavanjeVrijednosnogParametra();
