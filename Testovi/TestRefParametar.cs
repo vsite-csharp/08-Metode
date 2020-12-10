@@ -7,10 +7,12 @@ namespace Vsite.CSharp.Metode.Testovi
     [TestClass]
     public class TestRefParametar
     {
+        private int broj = 5;
+
         [TestMethod]
         public void MetodaDodajDesetUvećavaProslijeđeniCijeliBroj()
         {
-            Assert.AreEqual(15, RefParametar.PozivMetodeDodajDeset(5));
+            Assert.AreEqual(15, RefParametar.PozivMetodeDodajDeset(ref broj));
         }
 
         [TestMethod]
