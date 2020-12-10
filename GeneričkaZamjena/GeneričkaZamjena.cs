@@ -23,7 +23,7 @@ namespace Vsite.CSharp.Metode
             int i2 = 10;
             IspišiPar(i1, i2);
             // 071 Dodati poziv metode Zamijeni<T> za i1 i i2, pokrenuti program i provjeriti ispis.
-            Zamijeni<int>(ref i1, ref i2);
+            Zamijeni(ref i1, ref i2);
             IspišiPar(i1, i2);
 
             Console.WriteLine();
