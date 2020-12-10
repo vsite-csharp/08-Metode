@@ -48,7 +48,7 @@ namespace Vsite.CSharp.Metode
 
             //  Pokrenuti i provjeriti testove (3 testa u grupi TestGeneričkeZamjene moraju proći).
 
-            // TODO:075 Pogledati generirani kod metode Zamijeni alatom ILDASM.
+            //  Pogledati generirani kod metode Zamijeni alatom ILDASM.
 
             Console.WriteLine();
 
