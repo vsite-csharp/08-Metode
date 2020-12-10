@@ -24,9 +24,9 @@ namespace Vsite.CSharp.Metode
 
         static void Main(string[] args)
         {
-            Console.WriteLine(Zbroji(5, 6, 7));
-            Console.WriteLine(Zbroji(5, 5));
-            Console.WriteLine(Zbroji(3));
+            Console.WriteLine(Zbroji(5, 6, 7)); // 18,  18
+            Console.WriteLine(Zbroji(5, 5)); // 13,  10
+            Console.WriteLine(Zbroji(3)); // 8,  8
 
             Console.WriteLine("GOTOVO!!!");
             Console.ReadKey(true);
