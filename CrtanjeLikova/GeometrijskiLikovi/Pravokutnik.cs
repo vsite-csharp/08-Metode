@@ -14,7 +14,9 @@ namespace Vsite.CSharp.Metode.GeometrijskiLikovi
 
         public override void Nacrtaj(Graphics g)
         {
+            g.FillRectangle(Brushes.Beige, x, y, širina, visina);
             g.DrawRectangle(Pens.Black, x, y, širina, visina);
+            
         }
 
         public override void Pomakni(float deltaX, float deltaY)
@@ -27,6 +29,16 @@ namespace Vsite.CSharp.Metode.GeometrijskiLikovi
         {
             širina *= faktor;
             visina *= faktor;
+        }
+
+        protected override void Popuni()
+        {
+            throw new System.NotImplementedException();
+        }
+
+        protected override void NacrtajOkvir()
+        {
+            throw new System.NotImplementedException();
         }
 
         private float x;
