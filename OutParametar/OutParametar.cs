@@ -29,7 +29,7 @@ namespace Vsite.CSharp.Metode
             }
         }
 
-        // TODO:052 Pokrenuti i provjeriti testove (oba testa u grupi TestOutParametar moraju proći).
+        //  Pokrenuti i provjeriti testove (oba testa u grupi TestOutParametar moraju proći).
         static void Main(string[] args)
         {
 
