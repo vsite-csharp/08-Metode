@@ -13,19 +13,21 @@ namespace Vsite.CSharp.Metode.GeometrijskiLikovi
         private float y;
         private float širina;
         private float visina;
+        private Brush bojaUnutra;
+        private Pen bojaOkvira;
+        
 
-        public Elipsa(float x, float y, float širina, float visina)
+        public Elipsa(float x, float y, float širina, float visina, Brush boja1, Pen boja2)
         {
             this.x = x;
             this.y = y;
             this.širina = širina;
             this.visina = visina;
+            bojaUnutra = boja1;
+            bojaOkvira = boja2;
+
         }
 
-        public override void Nacrtaj(Graphics g)
-        {
-            g.DrawEllipse(Pens.Black, x, y, širina, visina);
-        }
 
         public override void Pomakni(float deltaX, float deltaY)
         {
@@ -37,6 +39,16 @@ namespace Vsite.CSharp.Metode.GeometrijskiLikovi
         {
             širina *= faktor;
             visina *= faktor;
+        }
+
+        protected override void NactrajOkvir(System.Drawing.Graphics g)
+        {
+            g.DrawEllipse(bojaOkvira, x, y, širina, visina);
+        }
+
+        protected override void Popuni(System.Drawing.Graphics g)
+        {
+            g.FillEllipse(bojaUnutra, x, y, širina, visina);
         }
     }
 }
