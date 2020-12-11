@@ -40,13 +40,13 @@ namespace Vsite.CSharp.Metode
             string s1 = "Ivica";
             string s2 = "Marica";
             IspišiPar(s1, s2);
-            // TODO:073 Dodati poziv metode Zamijeni<T> za s1 i s2, pokrenuti program i provjeriti ispis.
-
+            // Dodati poziv metode Zamijeni<T> za s1 i s2, pokrenuti program i provjeriti ispis.
+            Zamijeni(ref s1, ref s2);
             IspišiPar(s1, s2);
 
             // Pokrenuti i provjeriti testove (3 testa u grupi TestGeneričkeZamjene moraju proći).
 
-            // TODO:075 Pogledati generirani kod metode Zamijeni alatom ILDASM.
+            // Pogledati generirani kod metode Zamijeni alatom ILDASM.
 
             Console.WriteLine();
 
