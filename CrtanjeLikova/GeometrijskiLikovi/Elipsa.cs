@@ -22,7 +22,8 @@ namespace Vsite.CSharp.Metode.GeometrijskiLikovi
         }
         public override void Nacrtaj(Graphics g)
         {
-            g.DrawEllipse(Pens.Black, x, y, širina, visina);
+            Popuni(g);
+            Nacrtajokvir(g);
         }
 
         public override void Pomakni(float deltaX, float deltaY)
@@ -35,6 +36,16 @@ namespace Vsite.CSharp.Metode.GeometrijskiLikovi
         {
             širina *= faktor;
             visina *= faktor;
+        }
+        protected override void Popuni(Graphics g)
+        {
+            SolidBrush Brush = new SolidBrush(Color.Beige);
+            g.FillEllipse(Brush, x, y, širina, visina);
+        }
+
+        protected override void Nacrtajokvir(Graphics g)
+        {
+            g.DrawEllipse(Pens.Black, x, y, širina, visina);
         }
     }
 }
