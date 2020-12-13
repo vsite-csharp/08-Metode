@@ -1,10 +1,20 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Vsite.CSharp.Metode.GeometrijskiLikovi
 {
-    class Pravokutnik : GeometrijskiLik
+    class Elipsa : GeometrijskiLik
     {
-        public Pravokutnik(float x, float y, float širina, float visina)
+        private float x;
+        private float y;
+        private float širina;
+        private float visina;
+
+        public Elipsa(float x, float y, float širina, float visina)
         {
             this.x = x;
             this.y = y;
@@ -14,8 +24,7 @@ namespace Vsite.CSharp.Metode.GeometrijskiLikovi
 
         public override void Nacrtaj(Graphics g)
         {
-            g.FillRectangle(Brushes.Red, x, y, širina, visina);
-            g.DrawRectangle(Pens.Black, x, y, širina, visina);
+            g.DrawEllipse(Pens.Black, x, y, širina, visina);
         }
 
         public override void Pomakni(float deltaX, float deltaY)
@@ -29,10 +38,5 @@ namespace Vsite.CSharp.Metode.GeometrijskiLikovi
             širina *= faktor;
             visina *= faktor;
         }
-
-        private float x;
-        private float y;
-        private float širina;
-        private float visina;
     }
 }
