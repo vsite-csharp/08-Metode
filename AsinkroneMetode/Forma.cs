@@ -22,7 +22,7 @@ namespace Vsite.CSharp.Metode
         private const int BrojPonavljanja = 10;
         private const int Interval = 1000;
 
-        // TODO:130 Pogledati što se izvršava na pritisak prve tipke. Pokrenuti program i provjeriti njegov odziv.
+        // Pogledati što se izvršava na pritisak prve tipke. Pokrenuti program i provjeriti njegov odziv.
         private void buttonSinkroni_Click(object sender, EventArgs e)
         {
             NekaDugotrajnaOperacija();
@@ -39,7 +39,7 @@ namespace Vsite.CSharp.Metode
                 Thread.Sleep(Interval);
             }
         }
-        // TODO:132 Pogledati što se izvršava na pritisak druge tipke. Pokrenuti program i provjeriti njegov odziv.
+        // Pogledati što se izvršava na pritisak druge tipke. Pokrenuti program i provjeriti njegov odziv.
         private async void buttonAsinkroni_Click(object sender, EventArgs e)
         {
             await NekaDrugaDugotrajnaOperacija();
@@ -55,7 +55,7 @@ namespace Vsite.CSharp.Metode
             }
         }
 
-        // TODO:132 Pogledati što se izvršava na pritisak druge tipke. Pokrenuti program i provjeriti njegov odziv.
+        // Pogledati što se izvršava na pritisak druge tipke. Pokrenuti program i provjeriti njegov odziv.
         private async void buttonAsinkroni2_ClickAsync(object sender, EventArgs e)
         {
             textBoxAsinkroni2.Text = "Čekam da završi...";
