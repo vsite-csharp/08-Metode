@@ -23,7 +23,7 @@ namespace Vsite.CSharp.Metode
             {
                 Console.WriteLine("Upiši neki cijeli broj:");
                 string tekst = Console.ReadLine();
-                // TODO:051 Dodati poziv metode int.TryParse koja će upisani znakovni niz pretvoriti u cijeli broj i vratiti to kao rezultat metode UčitavanjeCijelogBroja.
+                // Dodati poziv metode int.TryParse koja će upisani znakovni niz pretvoriti u cijeli broj i vratiti to kao rezultat metode UčitavanjeCijelogBroja.
                 if (int.TryParse(tekst, out int rezultat))
                     return rezultat;
                 
