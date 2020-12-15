@@ -7,12 +7,12 @@ namespace Vsite.CSharp.Metode
     class RefParametar
     {
         // Dodati parametru metode modifikator ref tako da se argument x metodi prenosi po referenci te promijeniti poziv metode. Pokrenuti program i provjeriti ispis.
-        static void DodajDeset(int x)
+        static void DodajDeset(ref int x)
         {
             x += 10;
         }
 
-        public static int PozivMetodeDodajDeset(ref int broj)
+        public static int PozivMetodeDodajDeset( int broj)
         {
             Console.WriteLine($"Prije metode DodajDeset: {broj}");
             DodajDeset(ref broj);
