@@ -5,7 +5,7 @@ namespace Vsite.CSharp.Metode
     class ZamjenaObjekata
     {
         // TODO:061 Promijeniti metodu tako da se zamjena odrazi u pozivajućem kodu.
-        static void Zamijeni(string s1, string s2)
+        static void Zamijeni(ref string s1, ref string s2)
         {
             string temp = s2;
             s2 = s1;
@@ -18,7 +18,7 @@ namespace Vsite.CSharp.Metode
             Console.WriteLine("prvi = '{0}'", prvi);
             Console.WriteLine("drugi = '{0}'", drugi);
 
-            Zamijeni(prvi, drugi);
+            Zamijeni(ref prvi, ref drugi);
 
             Console.WriteLine("Nakon metode Zamijeni:");
             Console.WriteLine("prvi = '{0}'", prvi);

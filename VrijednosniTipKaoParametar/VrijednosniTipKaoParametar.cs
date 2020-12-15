@@ -50,11 +50,11 @@ namespace Vsite.CSharp.Metode
 
             // Dodati poziv metode PromijeniIme s prosljeđenom osobom janko i novim imenom "Pero" i ispisati osobu nakon poziva te metode.
             PromijeniIme(janko, "Pero");
-            Console.WriteLine();
+            Console.WriteLine(janko);
             
             // Pokrenuti program i obrazložiti ispis.
 
-            // TODO:025 Pokrenuti i provjeriti testove (test TestPromjeneArgumentaVrijednosnogTipa treba proći)
+            // Pokrenuti i provjeriti testove (test TestPromjeneArgumentaVrijednosnogTipa treba proći)
         }
 
         // TODO:020 Pokrenuti program, provjeriti ispise te ih obrazložiti.
