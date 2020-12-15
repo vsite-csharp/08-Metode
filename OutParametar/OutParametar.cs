@@ -22,23 +22,25 @@ namespace Vsite.CSharp.Metode
             while (true)
             {
                 Console.WriteLine("Upiši neki cijeli broj:");
+                string tekst = Console.ReadLine();
                 // TODO:051 Dodati poziv metode int.TryParse koja će upisani znakovni niz pretvoriti u cijeli broj i vratiti to kao rezultat metode UčitavanjeCijelogBroja.
-
-                return 0;
+                if (int.TryParse(tekst, out int rezultat))
+                    return rezultat;
+                
             }
         }
 
-        // TODO:052 Pokrenuti i provjeriti testove (oba testa u grupi TestOutParametar moraju proći).
+        // Pokrenuti i provjeriti testove (oba testa u grupi TestOutParametar moraju proći).
         static void Main(string[] args)
         {
 
-            PozivInicijalizacijeOutParametrom();
+           PozivInicijalizacijeOutParametrom();
 
-           int a UčitavanjeCijelogBroja();
-            Console.WriteLine($"Upisao si broj {a}");
+           
+           Console.WriteLine($"Upisao si broj {UčitavanjeCijelogBroja()}");
 
-            Console.WriteLine("GOTOVO!!!");
-            Console.ReadKey(true);
+           Console.WriteLine("GOTOVO!!!");
+           Console.ReadKey(true);
         }
     }
 }
