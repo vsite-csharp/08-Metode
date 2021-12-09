@@ -59,7 +59,7 @@ namespace Vsite.CSharp.Metode
             // :025 Pokrenuti i provjeriti testove (test TestPromjeneArgumentaVrijednosnogTipa treba proći)
         }
 
-        // TODO:020 Pokrenuti program, provjeriti ispise te ih obrazložiti.
+        // :020 Pokrenuti program, provjeriti ispise te ih obrazložiti.
         static void Main(string[] args)
         {
             UvećavanjeVrijednosnogParametra();
