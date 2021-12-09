@@ -1,10 +1,15 @@
-﻿using System.Drawing;
+﻿using System;
+using System.Collections.Generic;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
 
 namespace Vsite.CSharp.Metode.GeometrijskiLikovi
 {
-    class Pravokutnik : GeometrijskiLik
+    class Elipsa : GeometrijskiLik
     {
-        public Pravokutnik(float x, float y, float širina, float visina)
+        public Elipsa(float x, float y, float širina, float visina)
         {
             this.x = x;
             this.y = y;
@@ -14,7 +19,7 @@ namespace Vsite.CSharp.Metode.GeometrijskiLikovi
 
         protected override void NacrtajOkvir(Graphics g)
         {
-            g.FillRectangle(new SolidBrush(Color.HotPink), x, y, širina, visina);
+            g.DrawEllipse(Pens.Violet, x, y, širina, visina);
         }
 
         public override void Pomakni(float deltaX, float deltaY)
@@ -31,7 +36,7 @@ namespace Vsite.CSharp.Metode.GeometrijskiLikovi
 
         protected override void Popuni(Graphics g)
         {
-            g.FillRectangle(new SolidBrush(Color.HotPink), x, y, širina, visina);
+            g.FillEllipse(new SolidBrush(Color.DarkCyan), x, y, širina, visina);
         }
 
         private float x;
