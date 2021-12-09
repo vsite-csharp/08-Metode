@@ -32,9 +32,9 @@ namespace Vsite.CSharp.Metode
             double d2 = 4.56;
             IspišiPar(d1, d2);
             // TODO:072 Dodati poziv metode Zamijeni<T> za d1 i d2, pokrenuti program i provjeriti ispis.
-            Zamijeni(ref d1,ref d2)
+            Zamijeni(ref d1, ref d2);
 
-            IspišiPar(d1, d2);
+            IspišiPar(d1,d2);
 
             Console.WriteLine();
 
