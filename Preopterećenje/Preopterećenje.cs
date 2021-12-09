@@ -17,7 +17,7 @@ namespace Vsite.CSharp.Metode
         }
         //002 Razmotriti koje će se inačice pozivati. Pokrenuti program i usporediti ispis s prijašnjim.
 
-        // TODO:003 Pokrenuti i provjeriti testove (4 testa "TestPreopterećenjaMetode" moraju proći).
+        //003 Pokrenuti i provjeriti testove (4 testa "TestPreopterećenjaMetode" moraju proći).
 
 
         static void Main(string[] args)
