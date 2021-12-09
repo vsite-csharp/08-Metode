@@ -10,7 +10,7 @@ namespace Vsite.CSharp.Metode
             return x + y + z;
         }
 
-        // TODO:011 Preopteretiti funkciju Zbroji novom funkcijom public static int Zbroji(int x, int y) koja će vratiti zbroj argumenata. 
+        // :011 Preopteretiti funkciju Zbroji novom funkcijom public static int Zbroji(int x, int y) koja će vratiti zbroj argumenata. 
         public static int Zbroji(int x, int y)
         {
             return x + y;
