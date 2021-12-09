@@ -47,7 +47,7 @@ namespace Vsite.CSharp.Metode
             // Pokrenuti program i obrazložiti ispis.
             Console.WriteLine();
 
-            // TODO:023 Dodati poziv metode PromijeniIme s prosljeđenom osobom janko i novim imenom "Pero" i ispisati osobu nakon poziva te metode.
+            // Dodati poziv metode PromijeniIme s prosljeđenom osobom janko i novim imenom "Pero" i ispisati osobu nakon poziva te metode.
             PromijeniIme(janko, "Pero");
             Console.WriteLine(janko);
 
