@@ -29,6 +29,16 @@ namespace Vsite.CSharp.Metode.GeometrijskiLikovi
             visina *= faktor;
         }
 
+        protected override void Popuni(Graphics g)
+        {
+            g.FillRectangle(new SolidBrush(Color.Red),x,y,širina,visina);
+        }
+
+        protected override void NacrtajOkvir(Graphics g)
+        {
+            g.DrawRectangle(Pens.Black, x, y, širina, visina);
+        }
+
         private float x;
         private float y;
         private float širina;
