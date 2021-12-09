@@ -71,7 +71,7 @@ namespace Vsite.CSharp.Metode
 
         static void Main(string[] args)
         {
-            // TODO:080 Pokrenite program i provjerite što će se ispisati.
+            // Pokrenite program i provjerite što će se ispisati.
 
             Console.WriteLine("Zasebni pozivi nevirtualnih metoda:");
             ZasebniPoziviNevirtualnihMetoda();
