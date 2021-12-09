@@ -19,7 +19,7 @@ namespace Vsite.CSharp.Metode
 
         // 013 Provjeriti što bi se dogodilo ako bismo drugoj metodi definirali y s podrazumijevanim argumentom.
 
-        // 10 - 14014 Pokrenuti i provjeriti testove (3 testa "TestPreopterećenjePodrazumijevaniArg" moraju proći).
+        // 014 Pokrenuti i provjeriti testove (3 testa "TestPreopterećenjePodrazumijevaniArg" moraju proći).
 
 
         static void Main(string[] args)
