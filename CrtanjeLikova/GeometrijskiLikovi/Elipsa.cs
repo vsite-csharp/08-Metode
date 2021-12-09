@@ -9,31 +9,42 @@ namespace Vsite.CSharp.Metode.GeometrijskiLikovi
 {
     class Elipsa : GeometrijskiLik
     {
-        public Elipsa(float x, float y, float širina, float visina)
+        private float x;
+        private float y;
+        private float width;
+        private float height;
+        private Pen border;
+        private Brush fill;
+        public Elipsa(float x, float y, float width, float height,Pen border,Brush fill)
         {
             this.x = x;
             this.y = y;
-            this.širina = širina;
-            this.visina = visina;
+            this.width = width;
+            this.height = height;
+            this.border = border;
+            this.fill = fill;
         }
-        public override void Nacrtaj(Graphics g)
+        public override void Pomakni(float deltaX,float deltaY)
         {
-            g.DrawEllipse(Pens.Violet, x, y, širina, visina);
-            throw new NotImplementedException();
+            x += deltaX;
+            y += deltaY;
         }
 
-        public override void Pomakni(float deltaX, float deltaY)
-        {
-            throw new NotImplementedException();
-        }
+      
 
         public override void Uvećaj(float faktor)
         {
-            throw new NotImplementedException();
+            this.width *= faktor;
+            this.height *= faktor;
         }
-        private float x;
-        private float y;
-        private float širina;
-        private float visina;
+        protected override void NacrtajOkvir(Graphics g)
+        {
+            g.DrawEllipse(border, x, y, width, height);
+        }
+        protected override void Popuni(Graphics g)
+        {
+            g.FillEllipse(fill, x, y, width, height);
+        }
+        
     }
 }
