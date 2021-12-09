@@ -22,7 +22,8 @@ namespace Vsite.CSharp.Metode
         // :013 Provjeriti što bi se dogodilo ako bismo drugoj metodi definirali y s podrazumijevanim argumentom.
 
         // :014 Pokrenuti i provjeriti testove (3 testa "TestPreopterećenjePodrazumijevaniArg" moraju proći).
-
+        //PARAMETRI su u potpisu metode, a argumenti u pozivu
+        // treba izbjegavati definiranje defaultnih parametara
 
         static void Main(string[] args)
         {
