@@ -5,16 +5,23 @@ namespace Vsite.CSharp.Metode
     class Preopterećenje
     {
         // TODO:000 Pokrenuti program i provjeriti ispis.
+        // POTPIS METODE: broj argumenata i tipovi parametara
+        // ako ne postoji metoda koja se potpuno slaze, pozvat ce se ona kod koje ima najmanje pretvorbi
         public static void MojaMetoda(double broj1, double broj2)
         {
             Console.WriteLine($"MojaMetoda(double {broj1}, double {broj2})");
         }
 
-        // TODO:001 Napisati statičku javno dostupnu preopterećenu verziju metode MojaMetoda koja prima dva argumenta: prvi tipa int, a drugi tipa double. Metoda mora ispisati $"MojaMetoda(int {broj1}, double {broj2})"
+        // :001 Napisati statičku javno dostupnu preopterećenu verziju metode MojaMetoda koja prima dva argumenta: prvi tipa int, a drugi tipa double. Metoda mora ispisati $"MojaMetoda(int {broj1}, double {broj2})"
+        public static void MojaMetoda(int broj1, double broj2)
+        {
+            Console.WriteLine($"MojaMetoda(int {broj1}, double {broj2})");
+        }
 
-        // TODO:002 Razmotriti koje će se inačice pozivati. Pokrenuti program i usporediti ispis s prijašnjim.
 
-        // TODO:003 Pokrenuti i provjeriti testove (4 testa "TestPreopterećenjaMetode" moraju proći).
+        // :002 Razmotriti koje će se inačice pozivati. Pokrenuti program i usporediti ispis s prijašnjim.
+
+        // :003 Pokrenuti i provjeriti testove (4 testa "TestPreopterećenjaMetode" moraju proći).
 
 
         static void Main(string[] args)
