@@ -12,9 +12,14 @@ namespace Vsite.CSharp.Metode.GeometrijskiLikovi
             this.visina = visina;
         }
 
-        public override void Nacrtaj(Graphics g)
+        protected override void NacrtajOkvir(Graphics g)
         {
             g.DrawRectangle(Pens.Black, x, y, širina, visina);
+        }
+
+        protected override void Popuni(Graphics g)
+        {
+            g.FillRectangle(new SolidBrush(Color.Red), x, y, širina, visina);
         }
 
         public override void Pomakni(float deltaX, float deltaY)
