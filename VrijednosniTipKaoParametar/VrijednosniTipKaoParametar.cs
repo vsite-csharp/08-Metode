@@ -41,13 +41,16 @@ namespace Vsite.CSharp.Metode
             Osoba janko = new Osoba("Janko", 1);
             Console.WriteLine(janko);
 
-            // TODO:021 Dodati poziv metode ZamijeniOsobuDarkom s prosljeđenom osobom janko i ispisati osobu nakon poziva te metode.
-
-            // TODO:022 Pokrenuti program i obrazložiti ispis.
+            // 021 Dodati poziv metode ZamijeniOsobuDarkom s prosljeđenom osobom janko i ispisati osobu nakon poziva te metode.
+            ZamijeniOsobuDarkom(janko);
+            Console.WriteLine(janko);
+            // 022 Pokrenuti program i obrazložiti ispis.
 
             Console.WriteLine();
 
             // TODO:023 Dodati poziv metode PromijeniIme s prosljeđenom osobom janko i novim imenom "Pero" i ispisati osobu nakon poziva te metode.
+            PromijeniIme(janko, "Pero");
+            Console.WriteLine(janko);
 
             // TODO:024 Pokrenuti program i obrazložiti ispis.
 
