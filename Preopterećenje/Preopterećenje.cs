@@ -4,7 +4,7 @@ namespace Vsite.CSharp.Metode
 {
     class Preopterećenje
     {
-        // TODO:000 Pokrenuti program i provjeriti ispis.
+        // :000 Pokrenuti program i provjeriti ispis.
         // POTPIS METODE: broj argumenata i tipovi parametara
         // ako ne postoji metoda koja se potpuno slaze, pozvat ce se ona kod koje ima najmanje pretvorbi
         public static void MojaMetoda(double broj1, double broj2)
