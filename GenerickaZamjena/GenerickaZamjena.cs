@@ -4,7 +4,7 @@ namespace Vsite.CSharp.Metode
 {
     class GenerickaZamjena
     {
-        // TODO:070 Definirati javno dostupnu statičku generičku metodu Zamijeni<T>, koja će biti parametrizirana tipom T i moći raditi tipski sigurnu zamjenu bilo koja dva objekta istog tipa.
+        // :070 Definirati javno dostupnu statičku generičku metodu Zamijeni<T>, koja će biti parametrizirana tipom T i moći raditi tipski sigurnu zamjenu bilo koja dva objekta istog tipa.
         public static void Zamijeni<T>(ref T prvi, ref T drugi)
         {
             T temp = drugi;
