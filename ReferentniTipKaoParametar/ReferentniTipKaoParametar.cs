@@ -12,6 +12,9 @@ namespace Vsite.CSharp.Metode
             o = new Osoba("Mirko", 2);
             Console.WriteLine(o);
             Console.WriteLine("Nakon povratka iz metode ZamijeniOsobuMirkom:");
+
+            //metoda barata sa kopijom reference
+            //Kad se izađe iz metode, da se kopija gubi, odnosno novi  objekt
         }
 
         private static void PromijeniIme(Osoba o, string novoIme)
@@ -27,17 +30,22 @@ namespace Vsite.CSharp.Metode
             Osoba janko = new Osoba("Janko", 1);
             Console.WriteLine(janko);
 
-            // TODO:030 Dodati poziv metode ZamijeniOsobuMirkom s prosljeđenom osobom janko i ispisati osobu nakon poziva te metode.
+            // :030 Dodati poziv metode ZamijeniOsobuMirkom s prosljeđenom osobom janko i ispisati osobu nakon poziva te metode.
+            //Metoda može direktno pristupati sadržaju proslijeđenog objekta. Metoda dohvaća originalni objekt.
+            //
+            ZamijeniOsobuMirkom(janko);
+            Console.WriteLine(janko);
 
-            // TODO:031 Pokrenuti program i obrazložiti ispis.
-
+            // :031 Pokrenuti program i obrazložiti ispis.
             Console.WriteLine();
 
-            // TODO:032 Dodati poziv metode PromijeniIme s prosljeđenom osobom janko i novim imenom "Pero" i ispisati osobu nakon poziva te metode.
+            // :032 Dodati poziv metode PromijeniIme s prosljeđenom osobom janko i novim imenom "Pero" i ispisati osobu nakon poziva te metode.
+            PromijeniIme(janko, "Pero"); //metoda je dobila referencu, pristupa originalu preko kopije reference, imijenja original
+            Console.WriteLine(janko);
 
-            // TODO:033 Pokrenuti program i obrazložiti ispis.
+            // :033 Pokrenuti program i obrazložiti ispis.
 
-            // TODO:034 Pokrenuti i provjeriti testove (test TestPromjeneArgumentaReferentogTipa treba proći).
+            // :034 Pokrenuti i provjeriti testove (test TestPromjeneArgumentaReferentogTipa treba proći).
         }
 
         static void Main(string[] args)
