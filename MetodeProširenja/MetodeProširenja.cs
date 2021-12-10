@@ -17,7 +17,7 @@ namespace Vsite.CSharp.Metode
         public static int DajBrojRiječi(string tekst)
         {
             // 121 Zamijeniti povratnu vrijednost rezultatom metode proširenja BrojRiječi. Pokrenuti program i provjeriti ispise.
-            return MojaProširenja.BrojRiječi(tekst);
+            return tekst.BrojRiječi();
         }
 
         // 122 Pokrenuti i provjeriti testove (4 testa u grupi TestMetodeProširenja moraju proći).
