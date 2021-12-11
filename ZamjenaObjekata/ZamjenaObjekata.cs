@@ -5,15 +5,15 @@ namespace Vsite.CSharp.Metode
     class ZamjenaObjekata
     {
         // 061 Promijeniti metodu tako da se zamjena odrazi u pozivajućem kodu.
-        /*static void Zamijeni(ref string s1,ref  string s2)
+        static void Zamijeni(ref string s1,ref  string s2)
         {
             string temp = s2;
             s2 = s1;
             s1 = temp;
-        }*/
+        }
         static void Zamijeni(ref object s1, ref object s2)
         {
-            string temp = s2;
+            object temp = s2;
             s2 = s1;
             s1 = temp;
         }
