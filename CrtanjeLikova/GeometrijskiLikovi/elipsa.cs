@@ -7,13 +7,13 @@ using System.Threading.Tasks;
 
 namespace Vsite.CSharp.Metode.GeometrijskiLikovi
 {
-    class elipsa : GeometrijskiLik
+    class Elipsa : GeometrijskiLik
     {
         private float x;
         private float y;
         private float širina;
         private float visina;
-        public elipsa(float x, float y, float širina, float visina)
+        public Elipsa(float x, float y, float širina, float visina)
         {
             this.x = x;
             this.y = y;
