@@ -5,13 +5,19 @@ namespace Vsite.CSharp.Metode
 
     class Params
     {
-        // TODO:110 Napisati implementaciju metode tako da vrati zbroj svih proslijeđenih argumenata. Pokrenuti program i provjeriti rezultate.
+        // Napisati implementaciju metode tako da vrati zbroj svih proslijeđenih argumenata. Pokrenuti program i provjeriti rezultate.
         public static double Zbroji(params double[] pribrojnici)
         {
-            return 0.0;
+            double suma = 0.0;
+            foreach (double pribrojnik in pribrojnici)
+            {
+                suma += pribrojnik;
+            }
+
+            return suma;
         }
 
-        // TODO:111 Pokrenuti i provjeriti testove (3 testa u grupi TestParams moraju proći).
+        // Pokrenuti i provjeriti testove (3 testa u grupi TestParams moraju proći).
 
         static void Main(string[] args)
         {
