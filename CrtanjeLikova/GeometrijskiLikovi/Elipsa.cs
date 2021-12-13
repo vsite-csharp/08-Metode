@@ -14,6 +14,18 @@ namespace Vsite.CSharp.Metode.GeometrijskiLikovi
         private float y;
         private float širina;
         private float visina;
+        private Pen border = Pens.Black;
+        private Brush fill = Brushes.YellowGreen; 
+
+        public Elipsa(float x, float y, float širina, float visina, Pen border, Brush fill)
+        {
+            this.x = x;
+            this.y = y;
+            this.širina = širina;
+            this.visina = visina;
+            this.border = border;
+            this.fill = fill; 
+        }
 
         public Elipsa(float x, float y, float širina, float visina)
         {
@@ -21,25 +33,30 @@ namespace Vsite.CSharp.Metode.GeometrijskiLikovi
             this.y = y;
             this.širina = širina;
             this.visina = visina;
+            //this.border = border;
+            //this.fill = fill;
         }
+
         protected override void NacrtajOkvir(Graphics g)
         {
-            g.DrawEllipse(Pens.DarkViolet, x, y, širina, visina);
+            g.DrawEllipse(border, x, y, širina, visina);
         }
 
         public override void Pomakni(float deltaX, float deltaY)
         {
-            throw new NotImplementedException();
+            x += deltaX;
+            y += deltaY;
         }
 
         public override void Uvećaj(float faktor)
         {
-            throw new NotImplementedException();
+            this.širina *= faktor;
+            this.visina *= faktor;
         }
 
         protected override void Popuni(Graphics g)
         {
-           g.FillEllipse(new SolidBrush(Color.Red), x, y, širina, visina);
+           g.FillEllipse(fill, x, y, širina, visina);
         }
     }
 }
