@@ -3,7 +3,7 @@ using System.Drawing;
 
 namespace Vsite.CSharp.Metode.GeometrijskiLikovi
 {
-    // TODO:090 Pokrenuti program i provjeriti funkcioniranje tipki.
+    // :090 Pokrenuti program i provjeriti funkcioniranje tipki.
     class Crtež
     {
         public Crtež()
