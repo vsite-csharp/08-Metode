@@ -39,6 +39,7 @@ namespace Vsite.CSharp.Metode.GeometrijskiLikovi
             DodajLik(new Pravokutnik(10, 10, 40, 30));
             DodajLik(new Pravokutnik(80, 120, 150, 40));
             DodajLik(new Pravokutnik(150, 100, 50, 150));
+            DodajLik(new elipsa(20, 10, 50, 30));
 
             // TODO:091 U projekt dodati novu klasu Elipsa, izvedenu iz klase GeometrijskiLik te implemenirati potrebne metode.
 

@@ -46,6 +46,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="GeometrijskiLikovi\Crtež.cs" />
+    <Compile Include="GeometrijskiLikovi\elipsa.cs" />
     <Compile Include="GeometrijskiLikovi\GeometrijskiLik.cs" />
     <Compile Include="GeometrijskiLikovi\Pravokutnik.cs" />
     <Compile Include="GlavnaForma.cs">
