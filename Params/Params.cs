@@ -8,7 +8,13 @@ namespace Vsite.CSharp.Metode
         // TODO:110 Napisati implementaciju metode tako da vrati zbroj svih proslijeđenih argumenata. Pokrenuti program i provjeriti rezultate.
         public static double Zbroji(params double[] pribrojnici)
         {
-            return 0.0;
+            double suma = 0;
+            foreach (double broj in pribrojnici)
+            {
+                suma += broj;
+            }
+
+            return suma;
         }
 
         // TODO:111 Pokrenuti i provjeriti testove (3 testa u grupi TestParams moraju proći).
