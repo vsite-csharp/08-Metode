@@ -2,17 +2,24 @@
 {
     abstract class GeometrijskiLik
     {
-        // TODO:093 Dodati zaštićene apstraktne metode Popuni i NacrtajOkvir.
+        // :093 Dodati zaštićene apstraktne metode Popuni i NacrtajOkvir.
+        protected abstract void Popuni(System.Drawing.Graphics g);
+        protected abstract void NacrtajOkvir(System.Drawing.Graphics g);
 
-        // TODO:094 Apstraktnu metodu Nacrtaj nadomjestiti nevirtualnom metodom koja će pozivati apstraktne metode Popuni i NacrtajOkvir.
-        public abstract void Nacrtaj(System.Drawing.Graphics g);
+        // :094 Apstraktnu metodu Nacrtaj nadomjestiti nevirtualnom metodom koja će pozivati apstraktne metode Popuni i NacrtajOkvir.
+        public void Nacrtaj(System.Drawing.Graphics g)
+        {
+            Popuni(g);
+            NacrtajOkvir(g);
+        }
 
-        // TODO:095 U izvedenim klasama ukloniti metodu Nacrtaj te implementirati metode Popuni i NacrtajOvir.
 
-        // TODO:096 Dodati u konstruktore boju okvira i boju popune te ih upotrijebiti za iscrtavanje.
+        // :095 U izvedenim klasama ukloniti metodu Nacrtaj te implementirati metode Popuni i NacrtajOvir.
+
+        // :096 Dodati u konstruktore boju okvira i boju popune te ih upotrijebiti za iscrtavanje.
 
         public abstract void Pomakni(float deltaX, float deltaY);
-
         public abstract void Uvećaj(float faktor);
+        // apstraktne, to znači bit će automatski virtualne, moramo koristiti metodu override
     }
 }

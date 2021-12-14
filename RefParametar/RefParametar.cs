@@ -21,7 +21,7 @@ namespace Vsite.CSharp.Metode
             return broj;
         }
 
-        // TODO:041 Dodati prvom parametru metode modifikator ref tako da se prvi argument osoba metodi prenosi po referenci te promijeniti poziv metode. Pokrenuti program i provjeriti ispis.
+        // :041 Dodati prvom parametru metode modifikator ref tako da se prvi argument osoba metodi prenosi po referenci te promijeniti poziv metode. Pokrenuti program i provjeriti ispis.
         static void PromijeniOsobu(ref Osoba osoba, string novoIme, int noviMatičniBroj)
         {
             osoba = new Osoba(novoIme, noviMatičniBroj);
@@ -35,7 +35,7 @@ namespace Vsite.CSharp.Metode
             return osoba;
         }
 
-        // TODO:042 Pokrenuti i provjeriti testove (2 testa TestRefParametar moraju proći).
+        // :042 Pokrenuti i provjeriti testove (2 testa TestRefParametar moraju proći).
         static void Main(string[] args)
         {
             PozivMetodeDodajDeset(5);
