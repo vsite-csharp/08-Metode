@@ -15,7 +15,7 @@
 
         // 095 U izvedenim klasama ukloniti metodu Nacrtaj te implementirati metode Popuni i NacrtajOvir.
 
-        // TODO:096 Dodati u konstruktore boju okvira i boju popune te ih upotrijebiti za iscrtavanje.
+        // 096 Dodati u konstruktore boju okvira i boju popune te ih upotrijebiti za iscrtavanje.
 
         public abstract void Pomakni(float deltaX, float deltaY);
 
