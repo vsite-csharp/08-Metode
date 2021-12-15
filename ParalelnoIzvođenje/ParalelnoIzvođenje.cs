@@ -58,7 +58,7 @@ namespace Vsite.CSharp.Metode
         static long IzračunajZbroj(int prvi, int zadnji)
         {
             Debug.Assert(prvi <= zadnji);
-                
+
             long zbroj = 0;
             for (int i = prvi; i < zadnji; ++i)
                 zbroj += i;
