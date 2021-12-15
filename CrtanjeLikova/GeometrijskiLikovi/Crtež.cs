@@ -3,7 +3,7 @@ using System.Drawing;
 
 namespace Vsite.CSharp.Metode.GeometrijskiLikovi
 {
-    // TODO:090 Pokrenuti program i provjeriti funkcioniranje tipki.
+    // 090 Pokrenuti program i provjeriti funkcioniranje tipki.
     class Crtež
     {
         public Crtež()
@@ -36,17 +36,17 @@ namespace Vsite.CSharp.Metode.GeometrijskiLikovi
 
         private void SložiOgledniCrtež()
         {
-            DodajLik(new Pravokutnik(10, 10, 40, 30));
-            DodajLik(new Pravokutnik(80, 120, 150, 40));
-            DodajLik(new Pravokutnik(150, 100, 50, 150));
+            DodajLik(new Pravokutnik(10, 10, 40, 30, Color.OrangeRed, Color.DarkBlue));
+            DodajLik(new Pravokutnik(80, 120, 150, 40, Color.DarkGreen, Color.DarkOrange));
+            DodajLik(new Pravokutnik(150, 100, 50, 150, Color.BlueViolet, Color.Chartreuse));
 
             // 091 U projekt dodati novu klasu Elipsa, izvedenu iz klase GeometrijskiLik te implemenirati potrebne metode.
 
             // 092 Otkomentirati donje naredbe i pokrenuti program.
-            DodajLik(new Elipsa(80, 60, 60, 40));
-            DodajLik(new Elipsa(180, 80, 50, 80));
+            DodajLik(new Elipsa(80, 60, 60, 40, Color.Black, Color.Aqua));
+            DodajLik(new Elipsa(180, 80, 50, 80, Color.MediumVioletRed, Color.OrangeRed));
 
-            // TODO:097 Dodati u gornjim konstruktorima boju popune i boju okvira za svaki lik te pokrenuti program.
+            // 097 Dodati u gornjim konstruktorima boju popune i boju okvira za svaki lik te pokrenuti program.
         }
 
         private List<GeometrijskiLik> likovi = new List<GeometrijskiLik>();
