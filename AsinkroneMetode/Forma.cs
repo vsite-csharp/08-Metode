@@ -79,7 +79,7 @@ namespace Vsite.CSharp.Metode
             progressBar.Maximum = BrojPonavljanja;
             for (int i = 1; i < BrojPonavljanja; ++i)
             {
-                // TODO:135a Staviti točku prekida na donju naredbu.
+                //:135a Staviti točku prekida na donju naredbu.
                 progressBar.Value = i;
                 await Task.Delay(Interval);
             }
