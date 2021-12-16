@@ -20,7 +20,7 @@ namespace Vsite.CSharp.Metode
             Stopwatch štoperica = new Stopwatch();
             štoperica.Start();
             štoperica.Stop();
-             
+              
             IzračunajZbroj(1, 2);
 
             Task<long> zbrajanje = IzračunajZbrojAsinkrono(1, 2);
