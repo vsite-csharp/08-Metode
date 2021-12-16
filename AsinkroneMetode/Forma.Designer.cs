@@ -113,6 +113,7 @@ namespace Vsite.CSharp.Metode
             this.MaximizeBox = false;
             this.Name = "Forma";
             this.Text = "Moj Marljivi Program";
+            this.Load += new System.EventHandler(this.Forma_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
