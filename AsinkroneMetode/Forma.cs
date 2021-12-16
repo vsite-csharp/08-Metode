@@ -34,7 +34,7 @@ namespace Vsite.CSharp.Metode
             for (int i = 1; i < BrojPonavljanja; ++i)
             {
                 textBoxSinkronoVrijeme.Text = DateTime.Now.ToLongTimeString();
-                // TODO:131 Otkomentirati donju naredbu i ponovno pokrenuti program.
+                // :131 Otkomentirati donju naredbu i ponovno pokrenuti program.
                 textBoxSinkronoVrijeme.Update();
                 Thread.Sleep(Interval);
             }
