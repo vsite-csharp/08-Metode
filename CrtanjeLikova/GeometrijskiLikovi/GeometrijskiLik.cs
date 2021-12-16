@@ -3,10 +3,11 @@
     abstract class GeometrijskiLik
     {
         // TODO:093 Dodati zaštićene apstraktne metode Popuni i NacrtajOkvir.
-
+        protected abs
         // TODO:094 Apstraktnu metodu Nacrtaj nadomjestiti nevirtualnom metodom koja će pozivati apstraktne metode Popuni i NacrtajOkvir.
-        public abstract void Nacrtaj(System.Drawing.Graphics g);
-
+        public void Nacrtaj(System.Drawing.Graphics g);
+        {
+        }
         // TODO:095 U izvedenim klasama ukloniti metodu Nacrtaj te implementirati metode Popuni i NacrtajOvir.
 
         // TODO:096 Dodati u konstruktore boju okvira i boju popune te ih upotrijebiti za iscrtavanje.
