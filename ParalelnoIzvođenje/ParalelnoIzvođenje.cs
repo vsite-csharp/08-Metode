@@ -9,9 +9,9 @@ namespace Vsite.CSharp.Metode
 {
     class Program
     {
-        // TODO:140 Pogledati kod i potpise metoda Main i IzračunajZbrojAsinkrono te pozive metode IzračunajZbrojAsinkrono. 
-        // TODO:141 Pokrenuti program i usporediti trajanja i rezultate. 
-        // TODO:142 Pokrenuti program bez debuggiranja (Ctrl+F5) i usporediti trajanja s prethodnima.
+        // :140 Pogledati kod i potpise metoda Main i IzračunajZbrojAsinkrono te pozive metode IzračunajZbrojAsinkrono. 
+        // :141 Pokrenuti program i usporediti trajanja i rezultate. 
+        // :142 Pokrenuti program bez debuggiranja (Ctrl+F5) i usporediti trajanja s prethodnima.
         static async Task Main(string[] args)
         {
             const int broj = 10000000;
@@ -64,7 +64,7 @@ namespace Vsite.CSharp.Metode
                 zbroj += i;
             return zbroj;
         }
-
+        
         async static Task<long> IzračunajZbrojAsinkrono(int prvi, int zadnji)
         {
             Debug.Assert(prvi <= zadnji);
