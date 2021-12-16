@@ -26,7 +26,7 @@ namespace Vsite.CSharp.Metode
             Task<long> zbrajanje = IzračunajZbrojAsinkrono(1, 2);
             await zbrajanje;
 
-            // Ovdje počinje mjerenje poziva metoda
+            //  Ovdje počinje mjerenje poziva metoda
             štoperica.Restart();
 
             long zbroj = IzračunajZbroj(0, broj);
