@@ -46,7 +46,7 @@ namespace Vsite.CSharp.Metode.GeometrijskiLikovi
             DodajLik(new Elipsa(80, 60, 60, 40, Color.Pink, Color.DeepSkyBlue));
             DodajLik(new Elipsa(180, 80, 50, 80, Color.Black, Color.YellowGreen));
 
-            // TODO:097 Dodati u gornjim konstruktorima boju popune i boju okvira za svaki lik te pokrenuti program.
+            // :097 Dodati u gornjim konstruktorima boju popune i boju okvira za svaki lik te pokrenuti program.
         }
 
         private List<GeometrijskiLik> likovi = new List<GeometrijskiLik>();
