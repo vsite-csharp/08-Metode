@@ -12,7 +12,7 @@ namespace Vsite.CSharp.Metode
 
         public static void PozivInicijalizacijeOutParametrom()
         {
-            //int x = 0;
+            //int x = 0; //Za out nije potrebno inicijalizirati objekt prije poziva metode
             InicijalizirajBrojNaDeset(out int x);
             Console.WriteLine($"Nakon InicijalizirajBrojNaDeset: {x}");
         }

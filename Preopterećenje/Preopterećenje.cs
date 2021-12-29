@@ -20,7 +20,6 @@ namespace Vsite.CSharp.Metode
 
         // :003 Pokrenuti i provjeriti testove (4 testa "TestPreopterećenjaMetode" moraju proći).
 
-
         static void Main(string[] args)
         {
             int i1 = 1;

@@ -25,12 +25,14 @@ namespace Vsite.CSharp.Metode.GeometrijskiLikovi
 
         public override void Pomakni(float deltaX, float deltaY)
         {
-            throw new NotImplementedException();
+            x += deltaX;
+            y += deltaY;
         }
 
         public override void Uvećaj(float faktor)
         {
-            throw new NotImplementedException();
+            širina *= faktor;
+            visina *= faktor;
         }
 
         protected override void Popuni(Graphics g)
