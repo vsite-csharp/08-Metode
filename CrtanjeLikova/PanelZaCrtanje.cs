@@ -1,6 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Windows.Forms;
-using Vsite.CSharp.Metode.GeometrijskiLikovi;
+﻿using Vsite.CSharp.Metode.GeometrijskiLikovi;
 
 namespace Vsite.CSharp.Metode
 {

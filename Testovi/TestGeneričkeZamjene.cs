@@ -11,7 +11,7 @@ namespace Vsite.CSharp.Metode.Testovi
         [TestMethod]
         public void MetodaZamijeniZamjenjujeInt()
         {
-            var generičkeMetode = typeof(GenerickaZamjena).GetMethods().Where(m => m.IsGenericMethod && m.Name == "Zamijeni");
+            var generičkeMetode = typeof(GeneričkaZamjena).GetMethods().Where(m => m.IsGenericMethod && m.Name == "Zamijeni");
             Assert.AreEqual(1, generičkeMetode.Count());
             var metoda = generičkeMetode.ElementAt(0);
             Assert.IsNotNull(metoda);
@@ -26,7 +26,7 @@ namespace Vsite.CSharp.Metode.Testovi
         [TestMethod]
         public void MetodaZamijeniZamjenjujeDouble()
         {
-            var generičkeMetode = typeof(GenerickaZamjena).GetMethods().Where(m => m.IsGenericMethod && m.Name == "Zamijeni");
+            var generičkeMetode = typeof(GeneričkaZamjena).GetMethods().Where(m => m.IsGenericMethod && m.Name == "Zamijeni");
             Assert.AreEqual(1, generičkeMetode.Count());
             var metoda = generičkeMetode.ElementAt(0);
             MethodInfo generičkaMetoda = metoda.MakeGenericMethod(typeof(double));
@@ -40,7 +40,7 @@ namespace Vsite.CSharp.Metode.Testovi
         [TestMethod]
         public void MetodaZamijeniZamjenjujeString()
         {
-            var generičkeMetode = typeof(GenerickaZamjena).GetMethods().Where(m => m.IsGenericMethod && m.Name == "Zamijeni");
+            var generičkeMetode = typeof(GeneričkaZamjena).GetMethods().Where(m => m.IsGenericMethod && m.Name == "Zamijeni");
             Assert.AreEqual(1, generičkeMetode.Count());
             var metoda = generičkeMetode.ElementAt(0);
             MethodInfo generičkaMetoda = metoda.MakeGenericMethod(typeof(string));
