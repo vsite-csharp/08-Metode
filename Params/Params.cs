@@ -2,7 +2,6 @@
 
 namespace Vsite.CSharp.Metode
 {
-
     class Params
     {
         // TODO:110 Napisati implementaciju metode tako da vrati zbroj svih proslijeđenih argumenata. Pokrenuti program i provjeriti rezultate.
@@ -21,8 +20,6 @@ namespace Vsite.CSharp.Metode
             Console.WriteLine(Zbroji(3.2, 4.3, 7.5));
 
             Console.WriteLine("GOTOVO!!!");
-            Console.ReadKey(true);
         }
-
     }
 }

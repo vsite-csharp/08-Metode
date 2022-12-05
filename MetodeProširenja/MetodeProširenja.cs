@@ -26,7 +26,6 @@ namespace Vsite.CSharp.Metode
             Console.WriteLine("U '{0}' ima {1} riječi.", s, DajBrojRiječi(s));
 
             Console.WriteLine("GOTOVO!!!");
-            Console.ReadKey(true);
         }
     }
 }

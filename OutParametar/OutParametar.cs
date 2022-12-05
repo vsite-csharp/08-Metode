@@ -37,7 +37,6 @@ namespace Vsite.CSharp.Metode
             UčitavanjeCijelogBroja();
 
             Console.WriteLine("GOTOVO!!!");
-            Console.ReadKey(true);
         }
     }
 }

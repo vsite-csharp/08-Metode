@@ -26,7 +26,6 @@ namespace Vsite.CSharp.Metode
             Console.WriteLine(Zbroji(3));
 
             Console.WriteLine("GOTOVO!!!");
-            Console.ReadKey(true);
         }
     }
 }

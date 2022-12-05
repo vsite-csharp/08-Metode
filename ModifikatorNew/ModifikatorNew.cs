@@ -31,7 +31,6 @@ namespace Vsite.CSharp.Metode
             i.PredstaviSe();
 
             Console.WriteLine("GOTOVO!!!");
-            Console.ReadKey(true);
         }
     }
 }

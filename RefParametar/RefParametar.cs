@@ -42,8 +42,6 @@ namespace Vsite.CSharp.Metode
             PozivMetodePromijeniOsobu(new Osoba("Janko", 1), "Pero", 12);
 
             Console.WriteLine("GOTOVO!!!");
-            Console.ReadKey(true);
         }
-
     }
 }

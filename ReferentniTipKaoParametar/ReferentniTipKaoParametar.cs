@@ -45,7 +45,6 @@ namespace Vsite.CSharp.Metode
             PromjenaArgumentaReferentnogTipa();
 
             Console.WriteLine("GOTOVO!!!");
-            Console.ReadKey(true);
         }
     }
 }

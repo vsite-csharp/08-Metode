@@ -52,7 +52,6 @@ namespace Vsite.CSharp.Metode
             Console.WriteLine($"Zbroj: {zbroj}");
 
             Console.WriteLine("GOTOVO!!!");
-            Console.ReadKey();
         }
 
         static long IzračunajZbroj(int prvi, int zadnji)

@@ -30,7 +30,6 @@ namespace Vsite.CSharp.Metode
             MojaMetoda(d1, i2);
 
             Console.WriteLine("GOTOVO!!!");
-            Console.ReadKey(true);
         }
     }
 }

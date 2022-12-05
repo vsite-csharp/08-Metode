@@ -86,7 +86,6 @@ namespace Vsite.CSharp.Metode
             PoziviVirtualnihMetodaNaKolekcijiBaznogTipa();
 
             Console.WriteLine("GOTOVO!!!");
-            Console.ReadKey(true);
         }
     }
 }

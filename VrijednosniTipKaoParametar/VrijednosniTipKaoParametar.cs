@@ -62,7 +62,6 @@ namespace Vsite.CSharp.Metode
             PromjenaArgumentaVrijednosnogTipa();
 
             Console.WriteLine("GOTOVO!!!");
-            Console.ReadKey(true);
         }
     }
 }
