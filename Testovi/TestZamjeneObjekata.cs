@@ -12,12 +12,12 @@ namespace Vsite.CSharp.Metode.Testovi
             string prvi = "prvi";
             string drugi = "drugi";
             ZamjenaObjekata.ZamjenaStringova(prvi, drugi);
-            Assert.AreEqual("Prije metode Zamijeni:", cw.GetString());
-            Assert.AreEqual($"prvi = '{prvi}'", cw.GetString());
-            Assert.AreEqual($"drugi = '{drugi}'", cw.GetString());
-            Assert.AreEqual("Nakon metode Zamijeni:", cw.GetString());
-            Assert.AreEqual($"prvi = '{drugi}'", cw.GetString());
-            Assert.AreEqual($"drugi = '{prvi}'", cw.GetString());
+            Assert.AreEqual("Prije metode Zamijeni:", cw?.GetString());
+            Assert.AreEqual($"prvi = '{prvi}'", cw?.GetString());
+            Assert.AreEqual($"drugi = '{drugi}'", cw?.GetString());
+            Assert.AreEqual("Nakon metode Zamijeni:", cw?.GetString());
+            Assert.AreEqual($"prvi = '{drugi}'", cw?.GetString());
+            Assert.AreEqual($"drugi = '{prvi}'", cw?.GetString());
         }
 
         [TestMethod]
@@ -26,12 +26,12 @@ namespace Vsite.CSharp.Metode.Testovi
             int prvi = 1;
             int drugi = 2;
             ZamjenaObjekata.ZamjenaIntova(prvi, drugi);
-            Assert.AreEqual("Prije metode Zamijeni:", cw.GetString());
-            Assert.AreEqual($"prvi = '{prvi}'", cw.GetString());
-            Assert.AreEqual($"drugi = '{drugi}'", cw.GetString());
-            Assert.AreEqual("Nakon metode Zamijeni:", cw.GetString());
-            Assert.AreEqual($"prvi = '{drugi}'", cw.GetString());
-            Assert.AreEqual($"drugi = '{prvi}'", cw.GetString());
+            Assert.AreEqual("Prije metode Zamijeni:", cw?.GetString());
+            Assert.AreEqual($"prvi = '{prvi}'", cw?.GetString());
+            Assert.AreEqual($"drugi = '{drugi}'", cw?.GetString());
+            Assert.AreEqual("Nakon metode Zamijeni:", cw?.GetString());
+            Assert.AreEqual($"prvi = '{drugi}'", cw?.GetString());
+            Assert.AreEqual($"drugi = '{prvi}'", cw?.GetString());
         }
     }
 }

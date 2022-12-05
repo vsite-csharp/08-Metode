@@ -11,7 +11,7 @@ namespace Vsite.CSharp.Metode.Testovi
     {
         protected class ConsoleTestWriter : StringWriter
         {
-            public override void WriteLine(string text)
+            public override void WriteLine(string? text)
             {
                 output.Enqueue(text);
             }
@@ -26,27 +26,27 @@ namespace Vsite.CSharp.Metode.Testovi
                 output.Enqueue(number);
             }
 
-            public override void WriteLine(object obj)
+            public override void WriteLine(object? obj)
             {
-                output.Enqueue(obj.ToString());
+                output.Enqueue(obj?.ToString());
             }
 
-            public string GetString()
+            public string? GetString()
             {
-                return (string)output.Dequeue();
+                return (string?)output.Dequeue();
             }
 
-            public int GetInt()
+            public int? GetInt()
             {
-                return (int)output.Dequeue();
+                return (int?)output.Dequeue();
             }
 
-            public double GetDouble()
+            public double? GetDouble()
             {
-                return (double)output.Dequeue();
+                return (double?)output.Dequeue();
             }
 
-            public object GetObject()
+            public object? GetObject()
             {
                 return output.Dequeue();
             }
@@ -61,7 +61,7 @@ namespace Vsite.CSharp.Metode.Testovi
                 get { return output.Count; }
             }
 
-            public override void Write(string text)
+            public override void Write(string? text)
             {
                 output.Enqueue(text);
             }
@@ -90,8 +90,8 @@ namespace Vsite.CSharp.Metode.Testovi
             Queue<string> input = new Queue<string>();
         }
 
-        protected ConsoleTestWriter cw = null;
-        protected ConsoleTestReader cr = null;
+        protected ConsoleTestWriter? cw = null;
+        protected ConsoleTestReader? cr = null;
 
         [TestInitialize()]
         public virtual void Initialize()
@@ -105,8 +105,8 @@ namespace Vsite.CSharp.Metode.Testovi
         [TestCleanup()]
         public virtual void Cleanup()
         {
-            cw.Dispose();
-            cr.Dispose();
+            cw?.Dispose();
+            cr?.Dispose();
         }
     }
 }

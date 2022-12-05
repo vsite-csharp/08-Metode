@@ -18,7 +18,7 @@ namespace Vsite.CSharp.Metode.Testovi
             double d1 = 1.2;
             double d2 = 3.4;
             Preopterećenje.MojaMetoda(d1, d2);
-            Assert.AreEqual($"MojaMetoda(double {d1}, double {d2})", cw.GetString());
+            Assert.AreEqual($"MojaMetoda(double {d1}, double {d2})", cw?.GetString());
         }
 
         [TestMethod]
@@ -33,7 +33,7 @@ namespace Vsite.CSharp.Metode.Testovi
             int i1 = 1;
             int i2 = 2;
             Preopterećenje.MojaMetoda(i1, i2);
-            Assert.AreEqual($"MojaMetoda(int {i1}, double {i2})", cw.GetString());
+            Assert.AreEqual($"MojaMetoda(int {i1}, double {i2})", cw?.GetString());
         }
 
         [TestMethod]
@@ -48,7 +48,7 @@ namespace Vsite.CSharp.Metode.Testovi
             int i1 = 1;
             double d2 = 3.4;
             Preopterećenje.MojaMetoda(i1, d2);
-            Assert.AreEqual($"MojaMetoda(int {i1}, double {d2})", cw.GetString());
+            Assert.AreEqual($"MojaMetoda(int {i1}, double {d2})", cw?.GetString());
         }
 
         [TestMethod]
@@ -63,7 +63,7 @@ namespace Vsite.CSharp.Metode.Testovi
             double d1 = 3.4;
             int i2 = 1;
             Preopterećenje.MojaMetoda(d1, i2);
-            Assert.AreEqual($"MojaMetoda(double {d1}, double {i2})", cw.GetString());
+            Assert.AreEqual($"MojaMetoda(double {d1}, double {i2})", cw?.GetString());
         }
     }
 }
