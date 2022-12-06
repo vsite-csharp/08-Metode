@@ -60,8 +60,6 @@ namespace Vsite.CSharp.Metode
             UvećavanjeVrijednosnogParametra();
             Console.WriteLine();
             PromjenaArgumentaVrijednosnogTipa();
-
-            Console.WriteLine("GOTOVO!!!");
         }
     }
 }

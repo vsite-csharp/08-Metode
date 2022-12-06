@@ -43,9 +43,6 @@ namespace Vsite.CSharp.Metode
 
             // TODO:075 Pogledati generirani kod metode Zamijeni alatom ILDASM.
 
-            Console.WriteLine();
-
-            Console.WriteLine("GOTOVO!!!");
         }
     }
 }

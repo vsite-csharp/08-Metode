@@ -49,9 +49,6 @@ namespace Vsite.CSharp.Metode
             ZamjenaStringova(prvi, drugi);
             Console.WriteLine();
             ZamjenaIntova(1, 2);
-
-            Console.WriteLine("GOTOVO!!!");
-            Console.ReadKey(true);
         }
     }
 }

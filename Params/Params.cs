@@ -18,8 +18,6 @@ namespace Vsite.CSharp.Metode
             Console.WriteLine(zbroj);
 
             Console.WriteLine(Zbroji(3.2, 4.3, 7.5));
-
-            Console.WriteLine("GOTOVO!!!");
         }
     }
 }

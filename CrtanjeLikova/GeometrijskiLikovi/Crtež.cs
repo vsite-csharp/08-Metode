@@ -3,7 +3,7 @@ using System.Drawing;
 
 namespace Vsite.CSharp.Metode.GeometrijskiLikovi
 {
-    // TODO:090 Pokrenuti program i provjeriti funkcioniranje tipki.
+    // TODO:090 Pokrenuti program i provjeriti funkcioniranje tipki na alatnoj traci (toolbar).
     class Crtež
     {
         public Crtež()
@@ -19,19 +19,25 @@ namespace Vsite.CSharp.Metode.GeometrijskiLikovi
         public void Iscrtaj(Graphics g)
         {
             foreach (GeometrijskiLik lik in likovi)
+            { 
                 lik.Nacrtaj(g);
+            }
         }
 
         public void PomakniLikove(float dx, float dy)
         {
             foreach (GeometrijskiLik lik in likovi)
+            {
                 lik.Pomakni(dx, dy);
+            }
         }
 
         public void UvećajLikove(float faktor)
         {
             foreach (GeometrijskiLik lik in likovi)
+            { 
                 lik.Uvećaj(faktor);
+            }
         }
 
         private void SložiOgledniCrtež()

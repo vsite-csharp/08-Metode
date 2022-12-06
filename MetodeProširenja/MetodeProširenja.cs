@@ -24,8 +24,6 @@ namespace Vsite.CSharp.Metode
 
             s = "Brojim: jedan, dva, tri! Tko se nije skrio...";
             Console.WriteLine("U '{0}' ima {1} riječi.", s, DajBrojRiječi(s));
-
-            Console.WriteLine("GOTOVO!!!");
         }
     }
 }

@@ -40,8 +40,6 @@ namespace Vsite.CSharp.Metode
             PozivMetodeDodajDeset(5);
 
             PozivMetodePromijeniOsobu(new Osoba("Janko", 1), "Pero", 12);
-
-            Console.WriteLine("GOTOVO!!!");
         }
     }
 }

@@ -28,8 +28,6 @@ namespace Vsite.CSharp.Metode
             MojaMetoda(i1, d1);
             MojaMetoda(d1, d2);
             MojaMetoda(d1, i2);
-
-            Console.WriteLine("GOTOVO!!!");
         }
     }
 }

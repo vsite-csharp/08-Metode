@@ -29,8 +29,6 @@ namespace Vsite.CSharp.Metode
 
             Izvedena i = new Izvedena();
             i.PredstaviSe();
-
-            Console.WriteLine("GOTOVO!!!");
         }
     }
 }
