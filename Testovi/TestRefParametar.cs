@@ -14,7 +14,7 @@ namespace Vsite.CSharp.Metode.Testovi
         }
 
         [TestMethod]
-        public void MetodaPromijeniOsobuDoistaMijenjaProsljeđenuOsobu()
+        public void MetodaPromijeniOsobuDoistaMijenjaProslijeđenuOsobu()
         {
             Osoba novaOsoba = RefParametar.PozivMetodePromijeniOsobu(new Osoba("Janko", 1), "Pero", 12);
             Assert.AreEqual("Pero", novaOsoba.Ime);
