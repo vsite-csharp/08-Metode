@@ -4,25 +4,39 @@ namespace Vsite.CSharp.Metode
 {
     class ZamjenaObjekata
     {
-        // TODO:061 Promijeniti metodu tako da se zamjena odrazi u pozivajućem kodu.
-        static void Zamijeni(string s1, string s2)
+        // 061 Promijeniti metodu tako da se zamjena odrazi u pozivajućem kodu.
+        static void Zamijeni(ref object s1, ref object s2)
         {
-            string temp = s2;
-            s2 = s1;
-            s1 = temp;
+            (s1, s2) = (s2, s1);
+            // string temp = s2;
+            // s2 = s1;
+            // s1 = temp;
         }
 
-        public static void ZamjenaStringova(string prvi, string drugi)
+        //static void Zamijeni(ref string s1, ref string s2)
+        //{
+        //(s1, s2) = (s2, s1);
+        // string temp = s2;
+        // s2 = s1;
+        // s1 = temp;
+    //}
+
+
+
+    public static void ZamjenaStringova(string prvi, string drugi)
         {
             Console.WriteLine("Prije metode Zamijeni:");
             Console.WriteLine("prvi = '{0}'", prvi);
             Console.WriteLine("drugi = '{0}'", drugi);
 
-            Zamijeni(prvi, drugi);
+            object o1 = prvi;
+            object o2 = drugi;
+
+            Zamijeni(ref o1, ref o2);
 
             Console.WriteLine("Nakon metode Zamijeni:");
-            Console.WriteLine("prvi = '{0}'", prvi);
-            Console.WriteLine("drugi = '{0}'", drugi);
+            Console.WriteLine("prvi = '{0}'", (string)o1);
+            Console.WriteLine("drugi = '{0}'", (string)o2);
         }
 
         public static void ZamjenaIntova(int prvi, int drugi)
@@ -31,16 +45,20 @@ namespace Vsite.CSharp.Metode
             Console.WriteLine("prvi = '{0}'", prvi);
             Console.WriteLine("drugi = '{0}'", drugi);
 
-            // TODO:062 Promijeniti metodu Zamijeni tako da umjesto tipa string prima tip object i tako podržava zamjenu bilo kojeg tipa objekta. Dodati poziv te metode za 2 argumenta tipa int te provjeriti funkcionalnost.
+            // 062 Promijeniti metodu Zamijeni tako da umjesto tipa string prima tip object i tako podržava zamjenu bilo kojeg tipa objekta. Dodati poziv te metode za 2 argumenta tipa int te provjeriti funkcionalnost.
+            object o1 = prvi;
+            object o2 = drugi;
+
+            Zamijeni(ref o1, ref o2);
 
             Console.WriteLine("Nakon metode Zamijeni:");
-            Console.WriteLine("prvi = '{0}'", prvi);
-            Console.WriteLine("drugi = '{0}'", drugi);
+            Console.WriteLine("prvi = '{0}'", o1);
+            Console.WriteLine("drugi = '{0}'", o2);
         }
 
-        // TODO:063 Pokrenuti i provjeriti testove (oba testa u grupi TestZamjeneObjekata moraju proći)
+        // :063 Pokrenuti i provjeriti testove (oba testa u grupi TestZamjeneObjekata moraju proći)
 
-        // TODO:060 Pokrenuti program i provjeriti ispis.
+        // 060 Pokrenuti program i provjeriti ispis.
         static void Main(string[] args)
         {
             string prvi = "prvi";
