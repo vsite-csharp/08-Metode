@@ -24,7 +24,7 @@ namespace Vsite.CSharp.Metode
             // Ovdje počinje mjerenje poziva metoda
             štoperica.Restart();
 
-            long zbroj = IzračunajZbroj(0, broj);
+            long zbroj = IzračunajZbroj(0, 3 * broj);
             zbroj += IzračunajZbroj(broj, 2 * broj);
             zbroj += IzračunajZbroj(2 * broj, 3 * broj);
 
@@ -63,7 +63,7 @@ namespace Vsite.CSharp.Metode
         {
             Debug.Assert(prvi <= zadnji);
 
-            return await Task.Factory.StartNew(() =>
+            return await Task.Run(() =>
             {
                 long zbroj = 0;
                 for (int i = prvi; i < zadnji; ++i)

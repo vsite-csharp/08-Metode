@@ -50,11 +50,11 @@
 
             Task<string> rezultat = NekaTrećaOperacijaKojaVRaćaRezultat();
 
-            // TODO:134 Otkomentirati donju naredbu, pokrenuti program te pritisnuti treću tipku.
+            // :134 Otkomentirati donju naredbu, pokrenuti program te pritisnuti treću tipku.
             await NekaDrugaDugotrajnaOperacija();
 
-            // TODO:135 Staviti točke prekida (breakpoints) na zadnje četiri naredbe u ovoj metodi (uključujući i praznu naredbu) i naredbu iza TODO:135a.
-            // TODO:136 Pokrenuti program i pogledati redoslijed izvođenja naredbi.
+            // :135 Staviti točke prekida (breakpoints) na zadnje četiri naredbe u ovoj metodi (uključujući i praznu naredbu) i naredbu iza TODO:135a.
+            // :136 Pokrenuti program i pogledati redoslijed izvođenja naredbi.
 
             textBoxAsinkroni2.Text = await rezultat;
 
