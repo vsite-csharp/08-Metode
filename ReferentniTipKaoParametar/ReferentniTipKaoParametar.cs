@@ -31,11 +31,13 @@ namespace Vsite.CSharp.Metode
             ZamijeniOsobuMirkom(osoba);
 
             // :031 Pokrenuti program i obrazložiti ispis.
+            Console.WriteLine(osoba);
 
             Console.WriteLine();
 
             // :032 Dodati poziv metode PromijeniIme s proslijeđenom osobom i novim imenom "Pero" i ispisati osobu nakon poziva te metode.
             PromijeniIme(osoba, "Pero");
+            Console.WriteLine(osoba);
 
             // :033 Pokrenuti program i obrazložiti ispis.
 
