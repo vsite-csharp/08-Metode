@@ -19,7 +19,7 @@ namespace Vsite.CSharp.Metode
             return tekst.BrojRiječi();
         }
 
-        // TODO:122 Pokrenuti i provjeriti testove (4 testa u grupi TestMetodeProširenja moraju proći).
+        // 122 Pokrenuti i provjeriti testove (4 testa u grupi TestMetodeProširenja moraju proći).
 
         static void Main(string[] args)
         {
