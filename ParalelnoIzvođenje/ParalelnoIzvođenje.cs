@@ -25,6 +25,7 @@ namespace Vsite.CSharp.Metode
             štoperica.Restart();
 
             long zbroj = IzračunajZbroj(0, broj);
+            // long zbroj = IzračunajZbroj(0, broj;
             zbroj += IzračunajZbroj(broj, 2 * broj);
             zbroj += IzračunajZbroj(2 * broj, 3 * broj);
 
