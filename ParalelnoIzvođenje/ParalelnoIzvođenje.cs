@@ -4,9 +4,9 @@ namespace Vsite.CSharp.Metode
 {
     class Program
     {
-        // TODO:140 Pogledati kod i potpise metoda Main i IzračunajZbrojAsinkrono te pozive metode IzračunajZbrojAsinkrono. 
-        // TODO:141 Pokrenuti program i usporediti trajanja i rezultate. 
-        // TODO:142 Pokrenuti program bez debuggiranja (Ctrl+F5) i usporediti trajanja s prethodnima.
+        // Pogledati kod i potpise metoda Main i IzračunajZbrojAsinkrono te pozive metode IzračunajZbrojAsinkrono. 
+        // Pokrenuti program i usporediti trajanja i rezultate. 
+        // Pokrenuti program bez debuggiranja (Ctrl+F5) i usporediti trajanja s prethodnima.
         static async Task Main(string[] args)
         {
             const int broj = 10000000;
@@ -24,9 +24,9 @@ namespace Vsite.CSharp.Metode
             // Ovdje počinje mjerenje poziva metoda
             štoperica.Restart();
 
-            long zbroj = IzračunajZbroj(0, broj);
-            zbroj += IzračunajZbroj(broj, 2 * broj);
-            zbroj += IzračunajZbroj(2 * broj, 3 * broj);
+            long zbroj = IzračunajZbroj(0, 3 * broj);
+            //zbroj += IzračunajZbroj(broj, 2 * broj);
+            //zbroj += IzračunajZbroj(2 * broj, 3 * broj);
 
             štoperica.Stop();
             Console.WriteLine($"Trajanje sinkronog izračunavanja: {štoperica.ElapsedTicks}");
@@ -63,7 +63,7 @@ namespace Vsite.CSharp.Metode
         {
             Debug.Assert(prvi <= zadnji);
 
-            return await Task.Factory.StartNew(() =>
+            return await Task.Run(() =>
             {
                 long zbroj = 0;
                 for (int i = prvi; i < zadnji; ++i)
