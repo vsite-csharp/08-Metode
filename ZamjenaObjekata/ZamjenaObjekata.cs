@@ -44,7 +44,7 @@ namespace Vsite.CSharp.Metode
             Console.WriteLine("drugi = '{0}'", o2);
         }
 
-        // TODO:063 Pokrenuti i provjeriti testove (oba testa u grupi TestZamjeneObjekata moraju proći)
+        // 063 Pokrenuti i provjeriti testove (oba testa u grupi TestZamjeneObjekata moraju proći)
 
         // 060 Pokrenuti program i provjeriti ispis.
         static void Main(string[] args)
