@@ -16,14 +16,32 @@ namespace Vsite.CSharp.Metode
         }
     }
 
-    // TODO:082 U klase Izvedena1 i Izvedena2 dodajte javno dostupne metode IspišiImeObično koje će ispisati "Izvedena1 Obično", odnosno "Izvedena2 Obično". Pokrenite program i usporedite ispise s prijašnjima.
-    // TODO:083 U klase Izvedena1 i Izvedena2 dodajte javno dostupne metode IspišiImeVirtualno koje će ispisati "Izvedena1 Virtualno", odnosno "Izvedena2 Virtualno". Pokrenite program i usporedite ispise s prijašnjima.
+    // U klase Izvedena1 i Izvedena2 dodajte javno dostupne metode IspišiImeObično koje će ispisati "Izvedena1 Obično", odnosno "Izvedena2 Obično". Pokrenite program i usporedite ispise s prijašnjima.
+    // U klase Izvedena1 i Izvedena2 dodajte javno dostupne metode IspišiImeVirtualno koje će ispisati "Izvedena1 Virtualno", odnosno "Izvedena2 Virtualno". Pokrenite program i usporedite ispise s prijašnjima.
     class Izvedena1 : Bazna
     {
+        public new void IspišiImeObično()
+        {
+            Console.WriteLine("Izvedena1 Obično");
+        }
+
+        public override void IspišiImeVirtualno()
+        {
+            Console.WriteLine("Izvedena1 Virtualno");
+        }
     }
 
     class Izvedena2 : Izvedena1
     {
+        public new void IspišiImeObično()
+        {
+            Console.WriteLine("Izvedena2 Obično");
+        }
+
+        public override void IspišiImeVirtualno()
+        {
+            Console.WriteLine("Izvedena2 Virtualno");
+        }
     }
 
     class VirtualneMetode
@@ -76,8 +94,8 @@ namespace Vsite.CSharp.Metode
 
         static void Main(string[] args)
         {
-            // TODO:080 Pogledajte metode PoziviNevirtualnihMetoda i PoziviVirtualnihMetoda i zaključite što će se ispisati prilikom njihova poziva.
-            // TODO:081 Pokrenite program i provjerite što će se ispisati.
+            // Pogledajte metode PoziviNevirtualnihMetoda i PoziviVirtualnihMetoda i zaključite što će se ispisati prilikom njihova poziva.
+            // Pokrenite program i provjerite što će se ispisati.
 
             Console.OutputEncoding = Encoding.UTF8;
 
