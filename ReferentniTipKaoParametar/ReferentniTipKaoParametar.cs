@@ -27,17 +27,21 @@ namespace Vsite.CSharp.Metode
             Osoba osoba = new Osoba("Janko", 1);
             Console.WriteLine(osoba);
 
-            // TODO:030 Dodati poziv metode ZamijeniOsobuMirkom s proslijeđenom osobom i ispisati osobu nakon poziva te metode.
+            // Dodati poziv metode ZamijeniOsobuMirkom s proslijeđenom osobom i ispisati osobu nakon poziva te metode.
+            ZamijeniOsobuMirkom(osoba);
+            Console.WriteLine(osoba);
 
-            // TODO:031 Pokrenuti program i obrazložiti ispis.
+            // Pokrenuti program i obrazložiti ispis.
 
             Console.WriteLine();
 
-            // TODO:032 Dodati poziv metode PromijeniIme s proslijeđenom osobom i novim imenom "Pero" i ispisati osobu nakon poziva te metode.
+            // Dodati poziv metode PromijeniIme s proslijeđenom osobom i novim imenom "Pero" i ispisati osobu nakon poziva te metode.
+            PromijeniIme(osoba, "Pero");
+            Console.WriteLine(osoba);
 
-            // TODO:033 Pokrenuti program i obrazložiti ispis.
+            // Pokrenuti program i obrazložiti ispis.
 
-            // TODO:034 Pokrenuti i provjeriti testove (test TestPromjeneArgumentaReferentogTipa treba proći).
+            // Pokrenuti i provjeriti testove (test TestPromjeneArgumentaReferentogTipa treba proći).
         }
 
         static void Main(string[] args)
