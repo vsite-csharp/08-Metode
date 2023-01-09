@@ -3,29 +3,38 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using System.Drawing;
 
 namespace Vsite.CSharp.Metode.GeometrijskiLikovi
 {
     internal class Elipsa : GeometrijskiLik
     {
-        public Elipsa(float x, float y, float širina, float visina)
+        private float x;
+        private float y;
+        private float širina;
+        private float visina;
+        private Color bojaPopune;
+        private Color bojaOkvira;
+
+        public Elipsa(float x, float y, float širina, float visina, Color bojaPopune, Color bojaOkvira)
         {
             this.x = x;
             this.y = y;
             this.širina = širina;
             this.visina = visina;
+            this.bojaPopune = bojaPopune;
+            this.bojaOkvira = bojaOkvira;
         }
 
-        private float x;
-        private float y;
-        private float širina;
-        private float visina;
-
-        public override void Nacrtaj(Graphics g)
+        protected override void Popuni(Graphics g)
         {
-            g.DrawEllipse(Pens.Aquamarine);
-            throw new NotImplementedException();
+            Brush brush = new SolidBrush(bojaPopune);
+            g.FillEllipse(brush, x, y, širina, visina);
+        }
+
+        protected override void NacrtajOkvir(Graphics g)
+        {
+            Pen pen = new Pen(bojaOkvira);
+            g.DrawEllipse(pen, x, y, širina, visina);
         }
 
         public override void Pomakni(float deltaX, float deltaY)
