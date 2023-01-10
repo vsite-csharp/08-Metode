@@ -22,6 +22,7 @@ namespace Vsite.CSharp.Metode
             IspišiPar(i1, i2);
             // 071 Dodati poziv metode Zamijeni<T> za i1 i i2, pokrenuti program i provjeriti ispis.
             Zamijeni<int>(ref i1, ref i2);
+
             IspišiPar(i1, i2);
 
             Console.WriteLine();
@@ -31,6 +32,7 @@ namespace Vsite.CSharp.Metode
             IspišiPar(d1, d2);
             // 072 Dodati poziv metode Zamijeni<T> za d1 i d2, pokrenuti program i provjeriti ispis.
             Zamijeni(ref i1, ref i2);
+
             IspišiPar(d1, d2);
 
             Console.WriteLine();
@@ -43,9 +45,9 @@ namespace Vsite.CSharp.Metode
 
             IspišiPar(s1, s2);
 
-            // TODO:074 Pokrenuti i provjeriti testove (3 testa u grupi TestGeneričkeZamjene moraju proći).
+            // :074 Pokrenuti i provjeriti testove (3 testa u grupi TestGeneričkeZamjene moraju proći).
 
-            // TODO:075 Pogledati generirani kod metode Zamijeni alatom ILDASM.
+            // :075 Pogledati generirani kod metode Zamijeni alatom ILDASM.
 
         }
     }

@@ -56,8 +56,8 @@ namespace Vsite.CSharp.Metode.GeometrijskiLikovi
             // :091 U projekt dodati novu klasu Elipsa, izvedenu iz klase GeometrijskiLik te implemenirati potrebne metode.
 
             // :092 Otkomentirati donje naredbe i pokrenuti program.
-            DodajLik(new Elipsa(80, 60, 60, 40));
-            DodajLik(new Elipsa(180, 80, 50, 80));
+            DodajLik(new Elipsa(80, 60, 60, 40, RandomColor(), RandomColor()));
+            DodajLik(new Elipsa(180, 80, 50, 80, RandomColor(), RandomColor()));
 
             // :097 Dodati u gornjim konstruktorima boju popune i boju okvira za svaki lik te pokrenuti program.
         }

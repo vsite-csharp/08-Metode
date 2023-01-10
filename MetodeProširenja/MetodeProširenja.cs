@@ -7,7 +7,8 @@ namespace Vsite.CSharp.Metode
     {
         public static int BrojRiječi(this string s)
         {
-            return s.Split(new char[] { ' ', '.', ',', '?', '!', ';', ':' }, StringSplitOptions.RemoveEmptyEntries).Length;
+            char[] separators = new char[] { ' ', ',', '.', '?', '!', ':', ';', '\t', '\n' };
+            return s.Split(separators, StringSplitOptions.RemoveEmptyEntries).Length;
         }
     }
 

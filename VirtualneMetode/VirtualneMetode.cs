@@ -10,7 +10,7 @@ namespace Vsite.CSharp.Metode
             Console.WriteLine("Bazna Obično");
         }
 
-        public override void IspišiImeVirtualno()
+        public virtual void IspišiImeVirtualno()
         {
             Console.WriteLine("Bazna Virtualno");
         }
