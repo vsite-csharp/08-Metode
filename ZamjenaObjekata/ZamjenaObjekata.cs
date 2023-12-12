@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace Vsite.CSharp.Metode
+﻿namespace Vsite.CSharp.Metode
 {
-    class ZamjenaObjekata
+    static class ZamjenaObjekata
     {
         // TODO:061 Promijeniti metodu tako da se zamjena odrazi u pozivajućem kodu.
         static void Zamijeni(string s1, string s2)
@@ -41,7 +39,7 @@ namespace Vsite.CSharp.Metode
         // TODO:063 Pokrenuti i provjeriti testove (oba testa u grupi TestZamjeneObjekata moraju proći)
 
         // TODO:060 Pokrenuti program i provjeriti ispis.
-        static void Main(string[] args)
+        static void Main()
         {
             string prvi = "prvi";
             string drugi = "drugi";

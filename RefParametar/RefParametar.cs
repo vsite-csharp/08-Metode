@@ -1,10 +1,8 @@
-﻿using System;
-
-namespace Vsite.CSharp.Metode
+﻿namespace Vsite.CSharp.Metode
 {
-    using Osoba = Vsite.CSharp.Metode.Klasa.Osoba;
+    using Osoba = Klasa.Osoba;
 
-    class RefParametar
+    static class RefParametar
     {
         // TODO:040 Dodati parametru metode modifikator ref tako da se argument x metodi prenosi po referenci te promijeniti poziv metode. Pokrenuti program i provjeriti ispis.
         static void DodajDeset(int x)
@@ -35,7 +33,7 @@ namespace Vsite.CSharp.Metode
         }
 
         // TODO:042 Pokrenuti i provjeriti testove (2 testa TestRefParametar moraju proći).
-        static void Main(string[] args)
+        static void Main()
         {
             PozivMetodeDodajDeset(5);
 

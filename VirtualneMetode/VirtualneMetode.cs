@@ -1,5 +1,4 @@
-﻿using System;
-using System.Text;
+﻿using System.Text;
 
 namespace Vsite.CSharp.Metode
 {
@@ -26,7 +25,7 @@ namespace Vsite.CSharp.Metode
     {
     }
 
-    class VirtualneMetode
+    static class VirtualneMetode
     {
         public static void PoziviNevirtualnihMetoda()
         {
@@ -74,7 +73,7 @@ namespace Vsite.CSharp.Metode
             bazna.IspišiImeVirtualno();
         }
 
-        static void Main(string[] args)
+        static void Main()
         {
             // TODO:080 Pogledajte metode PoziviNevirtualnihMetoda i PoziviVirtualnihMetoda i zaključite što će se ispisati prilikom njihova poziva.
             // TODO:081 Pokrenite program i provjerite što će se ispisati.

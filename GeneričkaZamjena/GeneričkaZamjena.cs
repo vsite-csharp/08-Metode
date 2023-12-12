@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace Vsite.CSharp.Metode
+﻿namespace Vsite.CSharp.Metode
 {
-    class GeneričkaZamjena
+    static class GeneričkaZamjena
     {
         // TODO:070 Definirati javno dostupnu statičku generičku metodu Zamijeni<T>, koja će biti parametrizirana tipom T i moći raditi tipski sigurnu zamjenu bilo koja dva objekta istog tipa.
 
@@ -12,7 +10,7 @@ namespace Vsite.CSharp.Metode
             Console.WriteLine($"{o1.ToString()} - {o2.ToString()}");
         }
 
-        static void Main(string[] args)
+        static void Main()
         {
             int i1 = 5;
             int i2 = 10;

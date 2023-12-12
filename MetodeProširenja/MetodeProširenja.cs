@@ -1,13 +1,11 @@
-﻿using System;
-
-namespace Vsite.CSharp.Metode
+﻿namespace Vsite.CSharp.Metode
 {
     // TODO:120 U klasu MojaProširenja dodati metodu proširenja (extension method) BrojRiječi klasi string koja kao rezultat vraća broj riječi
     public static class MojaProširenja
     {
     }
 
-    class MetodeProširenja
+    static class MetodeProširenja
     {
         public static int DajBrojRiječi(string tekst)
         {
@@ -17,7 +15,7 @@ namespace Vsite.CSharp.Metode
 
         // TODO:122 Pokrenuti i provjeriti testove (4 testa u grupi TestMetodeProširenja moraju proći).
 
-        static void Main(string[] args)
+        static void Main()
         {
             string s = "Kako je počeo rat na mom otoku?";
             Console.WriteLine("U '{0}' ima {1} riječi.", s, DajBrojRiječi(s));

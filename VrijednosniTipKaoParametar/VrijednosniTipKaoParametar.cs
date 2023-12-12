@@ -1,10 +1,8 @@
-﻿using System;
-
-namespace Vsite.CSharp.Metode
+﻿namespace Vsite.CSharp.Metode
 {
     using Osoba = Struktura.Osoba;
 
-    class VrijednosniTipKaoParametar
+    static class VrijednosniTipKaoParametar
     {
         static void Uvećaj(int n)
         {
@@ -55,7 +53,7 @@ namespace Vsite.CSharp.Metode
         }
 
         // TODO:020 Pokrenuti program, provjeriti ispise te ih obrazložiti.
-        static void Main(string[] args)
+        static void Main()
         {
             UvećavanjeVrijednosnogParametra();
             Console.WriteLine();

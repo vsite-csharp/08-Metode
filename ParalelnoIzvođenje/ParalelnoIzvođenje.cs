@@ -2,12 +2,12 @@
 
 namespace Vsite.CSharp.Metode
 {
-    class Program
+    static class Program
     {
         // TODO:140 Pogledati kod i potpise metoda Main i IzračunajZbrojAsinkrono te pozive metode IzračunajZbrojAsinkrono. 
         // TODO:141 Pokrenuti program i usporediti trajanja i rezultate. 
         // TODO:142 Pokrenuti program bez debuggiranja (Ctrl+F5) i usporediti trajanja s prethodnima.
-        static async Task Main(string[] args)
+        static async Task Main()
         {
             const int broj = 10000000;
 

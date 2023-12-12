@@ -1,10 +1,8 @@
-﻿using System;
-
-namespace Vsite.CSharp.Metode
+﻿namespace Vsite.CSharp.Metode
 {
     using Osoba = Klasa.Osoba;
 
-    class ReferentniTipKaoParametar
+    static class ReferentniTipKaoParametar
     {
         private static void ZamijeniOsobuMirkom(Osoba o)
         {
@@ -40,7 +38,7 @@ namespace Vsite.CSharp.Metode
             // TODO:034 Pokrenuti i provjeriti testove (test TestPromjeneArgumentaReferentogTipa treba proći).
         }
 
-        static void Main(string[] args)
+        static void Main()
         {
             PromjenaArgumentaReferentnogTipa();
         }

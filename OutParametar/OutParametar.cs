@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace Vsite.CSharp.Metode
+﻿namespace Vsite.CSharp.Metode
 {
-    class OutParametar
+    static class OutParametar
     {
         // TODO:050 Dodati parametru metode modifikator out te promijeniti metodu PozivInicijalizacijeOutParametrom tako da se može prevesti i izvesti.
         static void InicijalizirajBrojNaDeset(int x)
@@ -29,7 +27,7 @@ namespace Vsite.CSharp.Metode
         }
 
         // TODO:052 Pokrenuti i provjeriti testove (oba testa u grupi TestOutParametar moraju proći).
-        static void Main(string[] args)
+        static void Main()
         {
             PozivInicijalizacijeOutParametrom();
 

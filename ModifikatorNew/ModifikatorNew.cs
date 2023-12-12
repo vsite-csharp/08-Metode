@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace Vsite.CSharp.Metode
+﻿namespace Vsite.CSharp.Metode
 {
     class ModifikatorNew
     {
@@ -20,7 +18,7 @@ namespace Vsite.CSharp.Metode
 
         // TODO:101 Izvesti program i usporediti donje ispise.
         // TODO:102 Pokrenuti i provjeriti testove (3 testa u grupi TestModifikatoraNew moraju proći)
-        static void Main(string[] args)
+        static void Main()
         {
             Bazna bazna = new Izvedena();
             bazna.PredstaviSe();

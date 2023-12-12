@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace Vsite.CSharp.Metode
+﻿namespace Vsite.CSharp.Metode
 {
-    class PreopterećenjePodrazumijevaniArg
+    static class PreopterećenjePodrazumijevaniArg
     {
         // TODO:010 Razmotriti što će se pokretanjem programa ispisati. Pokrenuti program i provjeriti ispise.
         public static int Zbroji(int x, int y = 2, int z = 3)
@@ -19,7 +17,7 @@ namespace Vsite.CSharp.Metode
         // TODO:014 Pokrenuti i provjeriti testove (3 testa "TestPreopterećenjePodrazumijevaniArg" moraju proći).
 
 
-        static void Main(string[] args)
+        static void Main()
         {
             Console.WriteLine(Zbroji(5, 6, 7));
             Console.WriteLine(Zbroji(5, 5));

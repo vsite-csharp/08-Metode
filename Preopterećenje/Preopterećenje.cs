@@ -1,8 +1,6 @@
-﻿using System;
-
-namespace Vsite.CSharp.Metode
+﻿namespace Vsite.CSharp.Metode
 {
-    class Preopterećenje
+    static class Preopterećenje
     {
         // TODO:000 Pokrenuti program i provjeriti ispis.
         public static void MojaMetoda(double broj1, double broj2)
@@ -17,7 +15,7 @@ namespace Vsite.CSharp.Metode
         // TODO:003 Pokrenuti i provjeriti testove (4 testa "TestPreopterećenjaMetode" moraju proći).
 
 
-        static void Main(string[] args)
+        static void Main()
         {
             int i1 = 1;
             int i2 = 2;
