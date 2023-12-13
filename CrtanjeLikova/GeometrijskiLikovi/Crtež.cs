@@ -1,7 +1,4 @@
-﻿using System.Collections.Generic;
-using System.Drawing;
-
-namespace Vsite.CSharp.Metode.GeometrijskiLikovi
+﻿namespace Vsite.CSharp.Metode.GeometrijskiLikovi
 {
     // TODO:090 Pokrenuti program i provjeriti funkcioniranje tipki na alatnoj traci (toolbar).
     class Crtež
@@ -55,6 +52,6 @@ namespace Vsite.CSharp.Metode.GeometrijskiLikovi
             // TODO:097 Dodati u gornjim konstruktorima boju popune i boju okvira za svaki lik te pokrenuti program.
         }
 
-        private List<GeometrijskiLik> likovi = new List<GeometrijskiLik>();
+        private readonly List<GeometrijskiLik> likovi = new List<GeometrijskiLik>();
     }
 }

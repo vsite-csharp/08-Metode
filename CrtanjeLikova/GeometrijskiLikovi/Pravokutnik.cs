@@ -1,6 +1,4 @@
-﻿using System.Drawing;
-
-namespace Vsite.CSharp.Metode.GeometrijskiLikovi
+﻿namespace Vsite.CSharp.Metode.GeometrijskiLikovi
 {
     class Pravokutnik : GeometrijskiLik
     {

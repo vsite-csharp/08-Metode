@@ -1,7 +1,4 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-
-namespace Vsite.CSharp.Metode.Testovi
+﻿namespace Vsite.CSharp.Metode.Testovi
 {
     [TestClass]
     public class TestParams

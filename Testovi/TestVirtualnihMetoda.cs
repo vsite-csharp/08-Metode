@@ -1,7 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System.Reflection;
-
-namespace Vsite.CSharp.Metode.Testovi
+﻿namespace Vsite.CSharp.Metode.Testovi
 {
     [TestClass]
     public class TestVirtualnihMetoda : ConsoleTest

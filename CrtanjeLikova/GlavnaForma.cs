@@ -1,7 +1,4 @@
-﻿using System;
-using System.Windows.Forms;
-
-namespace Vsite.CSharp.Metode
+﻿namespace Vsite.CSharp.Metode
 {
     public partial class GlavnaForma : Form
     {

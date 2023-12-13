@@ -1,8 +1,4 @@
-﻿using System;
-using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Vsite.CSharp;
-
-namespace Vsite.CSharp.Metode.Testovi
+﻿namespace Vsite.CSharp.Metode.Testovi
 {
     [TestClass]
     public class TestPreopterećenjePorazumijevaniArg

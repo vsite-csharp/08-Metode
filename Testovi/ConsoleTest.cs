@@ -1,8 +1,4 @@
-﻿using Microsoft.VisualStudio.TestTools.UnitTesting;
-using System;
-using System.Collections;
-using System.Collections.Generic;
-using System.IO;
+﻿using System.Collections;
 
 namespace Vsite.CSharp.Metode.Testovi
 {
@@ -11,24 +7,24 @@ namespace Vsite.CSharp.Metode.Testovi
     {
         protected class ConsoleTestWriter : StringWriter
         {
-            public override void WriteLine(string? text)
+            public override void WriteLine(string? value)
             {
-                output.Enqueue(text);
+                output.Enqueue(value);
             }
 
-            public override void WriteLine(int number)
+            public override void WriteLine(int value)
             {
-                output.Enqueue(number);
+                output.Enqueue(value);
             }
 
-            public override void WriteLine(double number)
+            public override void WriteLine(double value)
             {
-                output.Enqueue(number);
+                output.Enqueue(value);
             }
 
-            public override void WriteLine(object? obj)
+            public override void WriteLine(object? value)
             {
-                output.Enqueue(obj?.ToString());
+                output.Enqueue(value?.ToString());
             }
 
             public string? GetString()
@@ -87,7 +83,7 @@ namespace Vsite.CSharp.Metode.Testovi
                     input.Enqueue(s);
             }
 
-            Queue<string> input = new Queue<string>();
+            private readonly Queue<string> input = new Queue<string>();
         }
 
         protected ConsoleTestWriter? cw = null;

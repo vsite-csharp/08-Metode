@@ -5,7 +5,7 @@
         // TODO:061 Promijeniti metodu tako da se zamjena odrazi u pozivajućem kodu.
         static void Zamijeni(string s1, string s2)
         {
-            string temp = s2;
+            var temp = s2;
             s2 = s1;
             s1 = temp;
         }

@@ -31,7 +31,7 @@
         {
             PozivInicijalizacijeOutParametrom();
 
-            UčitavanjeCijelogBroja();
+            Console.WriteLine($"Upisan je broj: {UčitavanjeCijelogBroja()}");
         }
     }
 }
