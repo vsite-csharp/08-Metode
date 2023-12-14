@@ -10,8 +10,7 @@
 
         public static void PozivInicijalizacijeOutParametrom()
         {
-            int x = 0;
-            InicijalizirajBrojNaDeset(out x);
+            InicijalizirajBrojNaDeset(out int x);
             Console.WriteLine($"Nakon InicijalizirajBrojNaDeset: {x}");
         }
 
@@ -20,13 +19,18 @@
             while (true)
             {
                 Console.WriteLine("Upiši neki cijeli broj:");
-                // TODO:051 Dodati poziv metode int.TryParse koja će upisani znakovni niz pretvoriti u cijeli broj i vratiti to kao rezultat metode UčitavanjeCijelogBroja.
-
+                // 051 Dodati poziv metode int.TryParse koja će upisani znakovni niz
+                // pretvoriti u cijeli broj i vratiti to kao rezultat metode UčitavanjeCijelogBroja.
+                string unos=Console.ReadLine();
+                if(int.TryParse(unos, out int rezultat))
+                {
+                    return rezultat;
+                }
                 return 0;
             }
         }
 
-        // TODO:052 Pokrenuti i provjeriti testove (oba testa u grupi TestOutParametar moraju proći).
+        // 052 Pokrenuti i provjeriti testove (oba testa u grupi TestOutParametar moraju proći).
         static void Main()
         {
             PozivInicijalizacijeOutParametrom();
