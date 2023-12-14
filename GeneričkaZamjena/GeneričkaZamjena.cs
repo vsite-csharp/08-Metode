@@ -45,9 +45,9 @@
 
             IspišiPar(s1, s2);
 
-            // TODO:074 Pokrenuti i provjeriti testove (3 testa u grupi TestGeneričkeZamjene moraju proći).
+            // 074 Pokrenuti i provjeriti testove (3 testa u grupi TestGeneričkeZamjene moraju proći).
 
-            // TODO:075 Pogledati generirani kod metode Zamijeni alatom ILDASM.
+            // 075 Pogledati generirani kod metode Zamijeni alatom ILDASM.
 
         }
     }
