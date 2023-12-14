@@ -27,7 +27,7 @@
 
             // :030 Dodati poziv metode ZamijeniOsobuMirkom s proslijeđenom osobom i ispisati osobu nakon poziva te metode.
             ZamijeniOsobuMirkom(osoba);
-            Console.WriteLine();
+            Console.WriteLine(osoba);
 
             // :031 Pokrenuti program i obrazložiti ispis.
 
@@ -35,7 +35,7 @@
 
             // :032 Dodati poziv metode PromijeniIme s proslijeđenom osobom i novim imenom "Pero" i ispisati osobu nakon poziva te metode.
             PromijeniIme(osoba, "Pero");
-            Console.WriteLine();
+            Console.WriteLine(osoba);
 
             // :033 Pokrenuti program i obrazložiti ispis.
 

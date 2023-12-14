@@ -41,7 +41,7 @@
 
             // :021 Dodati poziv metode ZamijeniOsobuDarkom s proslijeđenom osobom i ispisati osobu nakon poziva te metode.
             ZamijeniOsobuDarkom(osoba);
-            Console.WriteLine();
+            Console.WriteLine(osoba);
 
             // :022 Pokrenuti program i obrazložiti ispis.
 
@@ -49,7 +49,7 @@
 
             // TODO:023 Dodati poziv metode PromijeniIme s proslijeđenom osobom i novim imenom "Pero" i ispisati osobu nakon poziva te metode.
             PromijeniIme(osoba, "Pero");
-            Console.WriteLine();
+            Console.WriteLine(osoba);
 
             // :024 Pokrenuti program i obrazložiti ispis.
 
