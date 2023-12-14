@@ -34,7 +34,8 @@ namespace Vsite.CSharp.Metode.GeometrijskiLikovi
 
         public override void Uvećaj(float faktor)
         {
-            throw new NotImplementedException();
+            z *= faktor;
+            v *= faktor;
         }
     }
 }
