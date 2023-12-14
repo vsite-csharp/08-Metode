@@ -55,10 +55,10 @@
             //referentni tipovi nakon pokretanja metoda ne mijenjaju vrijednosti svojih polja nakon izlaska iz metode
             // :024 Pokrenuti program i obrazložiti ispis.
 
-            // TODO:025 Pokrenuti i provjeriti testove (test TestPromjeneArgumentaVrijednosnogTipa treba proći)
+            // :025 Pokrenuti i provjeriti testove (test TestPromjeneArgumentaVrijednosnogTipa treba proći)
         }
 
-        // TODO:020 Pokrenuti program, provjeriti ispise te ih obrazložiti.
+        // :020 Pokrenuti program, provjeriti ispise te ih obrazložiti.
         static void Main()
         {
             UvećavanjeVrijednosnogParametra();
