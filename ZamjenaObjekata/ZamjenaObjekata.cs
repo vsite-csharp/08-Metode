@@ -22,7 +22,7 @@ namespace Vsite.CSharp.Metode
             object o2 = drugi;
             Zamijeni(ref o1, ref o2);
 
-            //
+            // potrebno vratiti u string 
 
             prvi = (string)o1;
             drugi = (string)o2;
@@ -43,6 +43,8 @@ namespace Vsite.CSharp.Metode
             object o1 = prvi;
             object o2 = drugi;
             Zamijeni(ref o1, ref o2);
+
+            // potrebno vratiti u int 
 
             prvi = (int)o1;
             drugi = (int)o2;

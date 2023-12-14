@@ -19,10 +19,29 @@ namespace Vsite.CSharp.Metode
     // TODO:083 U klase Izvedena1 i Izvedena2 dodajte javno dostupne metode IspišiImeVirtualno koje će ispisati "Izvedena1 Virtualno", odnosno "Izvedena2 Virtualno". Pokrenite program i usporedite ispise s prijašnjima.
     class Izvedena1 : Bazna
     {
+        public new void IspišiImeObično() // upozerenje  
+        {
+            Console.WriteLine("Izvedena 1 Obično");
+        }
+
+        public new virtual void IspišiImeVirtualno()
+        {
+            Console.WriteLine("Izvedena 1 Virtualno");
+        }
+
     }
 
     class Izvedena2 : Izvedena1
     {
+        public new void IspišiImeObično()
+        {
+            Console.WriteLine("Izvedena 2 Obično");
+        }
+
+        public new virtual void IspišiImeVirtualno()
+        {
+            Console.WriteLine("Izvedena 2 Virtualno");
+        }
     }
 
     static class VirtualneMetode
@@ -75,8 +94,8 @@ namespace Vsite.CSharp.Metode
 
         static void Main()
         {
-            // TODO:080 Pogledajte metode PoziviNevirtualnihMetoda i PoziviVirtualnihMetoda i zaključite što će se ispisati prilikom njihova poziva.
-            // TODO:081 Pokrenite program i provjerite što će se ispisati.
+            // Pogledajte metode PoziviNevirtualnihMetoda i PoziviVirtualnihMetoda i zaključite što će se ispisati prilikom njihova poziva.
+            // Pokrenite program i provjerite što će se ispisati.
 
             Console.OutputEncoding = Encoding.UTF8;
 
