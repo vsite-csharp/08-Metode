@@ -38,7 +38,7 @@
         {
             Osoba osoba = new Osoba("Janko", 1);
             Console.WriteLine(osoba);
-            Console.WriteLine(osoba);
+           
             // :021 Dodati poziv metode ZamijeniOsobuDarkom s proslijeđenom osobom i ispisati osobu nakon poziva te metode.
             ZamijeniOsobuDarkom(osoba);
             Console.WriteLine(osoba);
