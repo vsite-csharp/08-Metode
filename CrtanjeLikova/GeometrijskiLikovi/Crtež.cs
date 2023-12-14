@@ -1,6 +1,6 @@
 ﻿namespace Vsite.CSharp.Metode.GeometrijskiLikovi
 {
-    // TODO:090 Pokrenuti program i provjeriti funkcioniranje tipki na alatnoj traci (toolbar).
+    // :090 Pokrenuti program i provjeriti funkcioniranje tipki na alatnoj traci (toolbar).
     class Crtež
     {
         public Crtež()
@@ -37,17 +37,25 @@
             }
         }
 
+        private Color RandomColor()
+        {
+            Random rnd = new Random();
+            return Color.FromArgb(rnd.Next(0, 256), rnd.Next(0, 256), rnd.Next(0, 256));
+        }
+
         private void SložiOgledniCrtež()
         {
-            DodajLik(new Pravokutnik(10, 10, 40, 30));
-            DodajLik(new Pravokutnik(80, 120, 150, 40));
-            DodajLik(new Pravokutnik(150, 100, 50, 150));
+            DodajLik(new Pravokutnik(10, 10, 40, 30, RandomColor(), RandomColor()));
+            DodajLik(new Pravokutnik(80, 120, 150, 40, RandomColor(), RandomColor()));
+            DodajLik(new Pravokutnik(150, 100, 50, 150, RandomColor(), RandomColor()));
+            DodajLik(new Elipsa(40, 40, 60, 120, RandomColor(), RandomColor()));
 
-            // TODO:091 U projekt dodati novu klasu Elipsa, izvedenu iz klase GeometrijskiLik te implemenirati potrebne metode.
+            //  U projekt dodati novu klasu Elipsa, izvedenu iz klase GeometrijskiLik te implemenirati potrebne metode.
 
-            // TODO:092 Otkomentirati donje naredbe i pokrenuti program.
-            //DodajLik(new Elipsa(80, 60, 60, 40));
-            //DodajLik(new Elipsa(180, 80, 50, 80));
+            // Otkomentirati donje naredbe i pokrenuti program.
+            DodajLik(new Elipsa(80, 60, 60, 40, RandomColor(), RandomColor()));
+            DodajLik(new Elipsa(180, 80, 50, 80, RandomColor(), RandomColor()));
+
 
             // TODO:097 Dodati u gornjim konstruktorima boju popune i boju okvira za svaki lik te pokrenuti program.
         }
