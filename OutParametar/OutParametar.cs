@@ -2,8 +2,8 @@
 {
     static class OutParametar
     {
-        // TODO:050 Dodati parametru metode modifikator out te promijeniti metodu PozivInicijalizacijeOutParametrom tako da se može prevesti i izvesti.
-        static void InicijalizirajBrojNaDeset(int x)
+        // 050 Dodati parametru metode modifikator out te promijeniti metodu PozivInicijalizacijeOutParametrom tako da se može prevesti i izvesti.
+        static void InicijalizirajBrojNaDeset(out int x)
         {
             x = 10;
         }
@@ -11,7 +11,7 @@
         public static void PozivInicijalizacijeOutParametrom()
         {
             int x = 0;
-            InicijalizirajBrojNaDeset(x);
+            InicijalizirajBrojNaDeset(out x);
             Console.WriteLine($"Nakon InicijalizirajBrojNaDeset: {x}");
         }
 
