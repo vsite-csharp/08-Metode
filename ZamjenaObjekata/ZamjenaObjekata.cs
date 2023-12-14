@@ -39,6 +39,7 @@
             Zamijeni(ref o1, ref o2);
             prvi = (int)o1;
             drugi = (int)o2;
+
             Console.WriteLine("Nakon metode Zamijeni:");
             Console.WriteLine("prvi = '{0}'", prvi);
             Console.WriteLine("drugi = '{0}'", drugi);
