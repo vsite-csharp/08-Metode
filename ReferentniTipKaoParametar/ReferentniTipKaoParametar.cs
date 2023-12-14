@@ -25,17 +25,23 @@
             Osoba osoba = new Osoba("Janko", 1);
             Console.WriteLine(osoba);
 
-            // TODO:030 Dodati poziv metode ZamijeniOsobuMirkom s proslijeđenom osobom i ispisati osobu nakon poziva te metode.
+            // Dodati poziv metode ZamijeniOsobuMirkom s proslijeđenom osobom i ispisati osobu nakon poziva te metode.
 
-            // TODO:031 Pokrenuti program i obrazložiti ispis.
+            ZamijeniOsobuMirkom(osoba);
+            Console.WriteLine(osoba);
+
+            // Pokrenuti program i obrazložiti ispis.
 
             Console.WriteLine();
 
-            // TODO:032 Dodati poziv metode PromijeniIme s proslijeđenom osobom i novim imenom "Pero" i ispisati osobu nakon poziva te metode.
+            // Dodati poziv metode PromijeniIme s proslijeđenom osobom i novim imenom "Pero" i ispisati osobu nakon poziva te metode.
 
-            // TODO:033 Pokrenuti program i obrazložiti ispis.
+            PromijeniIme(osoba, "Pero");
+            Console.WriteLine(osoba);
 
-            // TODO:034 Pokrenuti i provjeriti testove (test TestPromjeneArgumentaReferentogTipa treba proći).
+            // Pokrenuti program i obrazložiti ispis.
+
+            // Pokrenuti i provjeriti testove (test TestPromjeneArgumentaReferentogTipa treba proći).
         }
 
         static void Main()

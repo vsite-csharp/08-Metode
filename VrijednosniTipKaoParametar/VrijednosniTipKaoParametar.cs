@@ -46,16 +46,16 @@
 
             // Pokrenuti program i obrazložiti ispis.
 
-            Console.WriteLine(osoba);
+            Console.WriteLine();
 
-            // TODO:023 Dodati poziv metode PromijeniIme s proslijeđenom osobom i novim imenom "Pero" i ispisati osobu nakon poziva te metode.
+            // Dodati poziv metode PromijeniIme s proslijeđenom osobom i novim imenom "Pero" i ispisati osobu nakon poziva te metode.
 
             PromijeniIme(osoba, "Pero");
             Console.WriteLine(osoba);
 
-            // TODO:024 Pokrenuti program i obrazložiti ispis.
+            // Pokrenuti program i obrazložiti ispis.
 
-            // TODO:025 Pokrenuti i provjeriti testove (test TestPromjeneArgumentaVrijednosnogTipa treba proći)
+            // Pokrenuti i provjeriti testove (test TestPromjeneArgumentaVrijednosnogTipa treba proći)
         }
 
         // TODO:020 Pokrenuti program, provjeriti ispise te ih obrazložiti.
