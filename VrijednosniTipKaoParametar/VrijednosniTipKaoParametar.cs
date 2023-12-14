@@ -38,21 +38,26 @@
         {
             Osoba osoba = new Osoba("Janko", 1);
             Console.WriteLine(osoba);
+            ZamijeniOsobuDarkom(osoba);
+            Console.WriteLine(osoba);
+            
 
-            // TODO:021 Dodati poziv metode ZamijeniOsobuDarkom s proslijeđenom osobom i ispisati osobu nakon poziva te metode.
+            // :021 Dodati poziv metode ZamijeniOsobuDarkom s proslijeđenom osobom i ispisati osobu nakon poziva te metode.
 
-            // TODO:022 Pokrenuti program i obrazložiti ispis.
+            // :022 Pokrenuti program i obrazložiti ispis.
 
             Console.WriteLine();
+            PromijeniIme(osoba, "Pero");
+            Console.WriteLine(osoba);
 
-            // TODO:023 Dodati poziv metode PromijeniIme s proslijeđenom osobom i novim imenom "Pero" i ispisati osobu nakon poziva te metode.
+            // :023 Dodati poziv metode PromijeniIme s proslijeđenom osobom i novim imenom "Pero" i ispisati osobu nakon poziva te metode.
 
-            // TODO:024 Pokrenuti program i obrazložiti ispis.
+            // :024 Pokrenuti program i obrazložiti ispis.
 
-            // TODO:025 Pokrenuti i provjeriti testove (test TestPromjeneArgumentaVrijednosnogTipa treba proći)
+            // :025 Pokrenuti i provjeriti testove (test TestPromjeneArgumentaVrijednosnogTipa treba proći)
         }
 
-        // TODO:020 Pokrenuti program, provjeriti ispise te ih obrazložiti.
+        // :020 Pokrenuti program, provjeriti ispise te ih obrazložiti.
         static void Main()
         {
             UvećavanjeVrijednosnogParametra();
