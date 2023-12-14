@@ -2,8 +2,13 @@
 {
     static class GeneričkaZamjena
     {
-        // TODO:070 Definirati javno dostupnu statičku generičku metodu Zamijeni<T>, koja će biti parametrizirana tipom T i moći raditi tipski sigurnu zamjenu bilo koja dva objekta istog tipa.
-
+        // 070 Definirati javno dostupnu statičku generičku metodu Zamijeni<T>, koja će biti parametrizirana tipom T i moći raditi tipski sigurnu zamjenu bilo koja dva objekta istog tipa.
+        public static void Zamijeni<T>(ref T prvi, ref T drugi)
+        {
+            var temp = drugi;
+            drugi = prvi;
+            prvi = temp;
+        }
 
         private static void IspišiPar(object o1, object o2)
         {
@@ -15,7 +20,8 @@
             int i1 = 5;
             int i2 = 10;
             IspišiPar(i1, i2);
-            // TODO:071 Dodati poziv metode Zamijeni<T> za i1 i i2, pokrenuti program i provjeriti ispis.
+            // 071 Dodati poziv metode Zamijeni<T> za i1 i i2, pokrenuti program i provjeriti ispis.
+            Zamijeni<int>(ref i1, ref i2);
 
             IspišiPar(i1, i2);
 
@@ -24,7 +30,8 @@
             double d1 = 1.23;
             double d2 = 4.56;
             IspišiPar(d1, d2);
-            // TODO:072 Dodati poziv metode Zamijeni<T> za d1 i d2, pokrenuti program i provjeriti ispis.
+            // 072 Dodati poziv metode Zamijeni<T> za d1 i d2, pokrenuti program i provjeriti ispis.
+            Zamijeni(ref d1, ref d2);
 
             IspišiPar(d1, d2);
 
@@ -33,7 +40,8 @@
             string s1 = "Ivica";
             string s2 = "Marica";
             IspišiPar(s1, s2);
-            // TODO:073 Dodati poziv metode Zamijeni<T> za s1 i s2, pokrenuti program i provjeriti ispis.
+            // 073 Dodati poziv metode Zamijeni<T> za s1 i s2, pokrenuti program i provjeriti ispis.
+            Zamijeni(ref s1, ref s2);
 
             IspišiPar(s1, s2);
 
