@@ -39,13 +39,19 @@
             Osoba osoba = new Osoba("Janko", 1);
             Console.WriteLine(osoba);
 
-            // TODO:021 Dodati poziv metode ZamijeniOsobuDarkom s proslijeđenom osobom i ispisati osobu nakon poziva te metode.
+            // Dodati poziv metode ZamijeniOsobuDarkom s proslijeđenom osobom i ispisati osobu nakon poziva te metode.
 
-            // TODO:022 Pokrenuti program i obrazložiti ispis.
+            ZamijeniOsobuDarkom(osoba);
+            Console.WriteLine(osoba);
 
-            Console.WriteLine();
+            // Pokrenuti program i obrazložiti ispis.
+
+            Console.WriteLine(osoba);
 
             // TODO:023 Dodati poziv metode PromijeniIme s proslijeđenom osobom i novim imenom "Pero" i ispisati osobu nakon poziva te metode.
+
+            PromijeniIme(osoba, "Pero");
+            Console.WriteLine(osoba);
 
             // TODO:024 Pokrenuti program i obrazložiti ispis.
 
