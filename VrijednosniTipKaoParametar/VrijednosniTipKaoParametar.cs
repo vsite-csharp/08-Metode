@@ -42,6 +42,7 @@
             // :021 Dodati poziv metode ZamijeniOsobuDarkom s proslijeđenom osobom i ispisati osobu nakon poziva te metode.
             ZamijeniOsobuDarkom(osoba);
             Console.WriteLine();
+
             // :022 Pokrenuti program i obrazložiti ispis.
 
             Console.WriteLine();
@@ -49,6 +50,7 @@
             // TODO:023 Dodati poziv metode PromijeniIme s proslijeđenom osobom i novim imenom "Pero" i ispisati osobu nakon poziva te metode.
             PromijeniIme(osoba, "Pero");
             Console.WriteLine();
+
             // :024 Pokrenuti program i obrazložiti ispis.
 
             // :025 Pokrenuti i provjeriti testove (test TestPromjeneArgumentaVrijednosnogTipa treba proći)
