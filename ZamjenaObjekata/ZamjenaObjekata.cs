@@ -44,10 +44,8 @@ namespace Vsite.CSharp.Metode
             object o2 = drugi;
             Zamijeni(ref o1, ref o2);
 
-            Zamijeni(ref o1, ref o2);
-
-            prvi = (string)o1;
-            drugi = (string)o2;
+            prvi = (int)o1;
+            drugi = (int)o2;
 
 
             Console.WriteLine("Nakon metode Zamijeni:");
