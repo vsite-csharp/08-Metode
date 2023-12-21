@@ -9,7 +9,7 @@ namespace Vsite.CSharp.Metode
         // TODO:142 Pokrenuti program bez debuggiranja (Ctrl+F5) i usporediti trajanja s prethodnima.
         static async Task Main()
         {
-            const int broj = 10000000;
+            const int broj = 10_000_000;
 
             // Pokrećemo sve metode prije mjerenja da bi JIT preveo kod u strojni
             Stopwatch štoperica = new Stopwatch();
@@ -18,8 +18,13 @@ namespace Vsite.CSharp.Metode
 
             IzračunajZbroj(1, 2);
 
-            Task<long> zbrajanje = IzračunajZbrojAsinkrono(1, 2);
-            await zbrajanje;
+            Task<long> zbr1 = IzračunajZbrojAsinkrono(1, 2);
+            await zbr1;
+            Task<long> zbr2 = IzračunajZbrojAsinkrono(1, 2);
+            await zbr2;
+            Task<long> zbr3 = IzračunajZbrojAsinkrono(1, 2);
+            await zbr3;
+
 
             // Ovdje počinje mjerenje poziva metoda
             štoperica.Restart();
