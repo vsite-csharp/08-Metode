@@ -6,7 +6,6 @@
         public static double Zbroji(params double[] pribrojnici)
         {
             return pribrojnici.Sum();
-            //return 0.0;
         }
 
         // :111 Pokrenuti i provjeriti testove (3 testa u grupi TestParams moraju proći).
