@@ -53,7 +53,7 @@
             // TODO:134 Otkomentirati donju naredbu, pokrenuti program te pritisnuti treću tipku.
             await NekaDrugaDugotrajnaOperacija();
 
-            // :135 Staviti točke prekida (breakpoints) na zadnje četiri naredbe u ovoj metodi (uključujući i praznu naredbu) i naredbu iza TODO:135a.
+            // :135 Staviti točke prekida (breakpoints) na zadnje četiri naredbe u ovoj metodi (uključujući i praznu naredbu) i naredbu iza :135a.
             // :136 Pokrenuti program i pogledati redoslijed izvođenja naredbi.
 
             textBoxAsinkroni2.Text = await rezultat;
