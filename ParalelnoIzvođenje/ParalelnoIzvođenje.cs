@@ -4,8 +4,8 @@ namespace Vsite.CSharp.Metode
 {
     static class Program
     {
-        // TODO:140 Pogledati kod i potpise metoda Main i IzračunajZbrojAsinkrono te pozive metode IzračunajZbrojAsinkrono. 
-        // TODO:141 Pokrenuti program i usporediti trajanja i rezultate. 
+        // :140 Pogledati kod i potpise metoda Main i IzračunajZbrojAsinkrono te pozive metode IzračunajZbrojAsinkrono. 
+        // :141 Pokrenuti program i usporediti trajanja i rezultate. 
         // TODO:142 Pokrenuti program bez debuggiranja (Ctrl+F5) i usporediti trajanja s prethodnima.
         static async Task Main()
         {
@@ -18,8 +18,12 @@ namespace Vsite.CSharp.Metode
 
             IzračunajZbroj(1, 2);
 
-            Task<long> zbrajanje = IzračunajZbrojAsinkrono(1, 2);
-            await zbrajanje;
+            Task<long> zbr1 = IzračunajZbrojAsinkrono(1, 2);
+            await zbr1; 
+            Task<long> zbr2 = IzračunajZbrojAsinkrono(1, 2);
+            await zbr2;  
+            Task<long> zbr3 = IzračunajZbrojAsinkrono(1, 2);
+            await zbr3;
 
             // Ovdje počinje mjerenje poziva metoda
             štoperica.Restart();
