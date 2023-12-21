@@ -17,7 +17,7 @@
             return tekst.BrojRiječi();
         }
 
-            // TODO:122 Pokrenuti i provjeriti testove (4 testa u grupi TestMetodeProširenja moraju proći).
+            // :122 Pokrenuti i provjeriti testove (4 testa u grupi TestMetodeProširenja moraju proći).
 
             static void Main()
             {
@@ -27,5 +27,5 @@
                 s = "Brojim: jedan, dva, tri! Tko se nije skrio...";
                 Console.WriteLine("U '{0}' ima {1} riječi.", s, DajBrojRiječi(s));
             }
-        }
     }
+}
