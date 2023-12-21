@@ -1,6 +1,6 @@
 ﻿namespace Vsite.CSharp.Metode.GeometrijskiLikovi
 {
-    // TODO:090 Pokrenuti program i provjeriti funkcioniranje tipki na alatnoj traci (toolbar).
+    // :090 Pokrenuti program i provjeriti funkcioniranje tipki na alatnoj traci (toolbar).
     class Crtež
     {
         public Crtež()
