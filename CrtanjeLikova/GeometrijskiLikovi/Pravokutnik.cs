@@ -1,18 +1,30 @@
-﻿namespace Vsite.CSharp.Metode.GeometrijskiLikovi
+﻿using System.Drawing;
+namespace Vsite.CSharp.Metode.GeometrijskiLikovi
 {
     class Pravokutnik : GeometrijskiLik
     {
-        public Pravokutnik(float x, float y, float širina, float visina)
+        public Pravokutnik(float x, float y, float širina, float visina, Color bojaPopune, Color bojaOkvira)
         {
             this.x = x;
             this.y = y;
             this.širina = širina;
             this.visina = visina;
+            this.bojaPopune = bojaPopune;
+            this.bojaOkvira = bojaOkvira;
+        }
+        protected override void Popuni(Graphics g)
+        {
+            Brush brush = new SolidBrush(bojaPopune);
+            g.FillRectangle(brush, x, y, širina, visina);
         }
 
-        public override void Nacrtaj(Graphics g)
+
+
+        protected override void NacrtajOkvir(Graphics g)
         {
             g.DrawRectangle(Pens.Black, x, y, širina, visina);
+            Pen pen = new Pen(bojaOkvira);
+            g.DrawRectangle(pen, x, y, širina, visina);
         }
 
         public override void Pomakni(float deltaX, float deltaY)
@@ -31,5 +43,7 @@
         private float y;
         private float širina;
         private float visina;
+        private Color bojaPopune;
+        private Color bojaOkvira;
     }
 }
