@@ -2,17 +2,31 @@
 {
     class Pravokutnik : GeometrijskiLik
     {
-        public Pravokutnik(float x, float y, float širina, float visina)
+        private float x;
+        private float y;
+        private float širina;
+        private float visina;
+        private Color b;
+        private Color i;
+
+        public Pravokutnik(float x, float y, float širina, float visina, Color border, Color infill)
         {
             this.x = x;
             this.y = y;
             this.širina = širina;
             this.visina = visina;
+            this.b = border;
+            this.i = infill;
         }
 
-        public override void Nacrtaj(Graphics g)
+        protected override void NacrtajOkvir(Graphics g)
         {
-            g.DrawRectangle(Pens.Black, x, y, širina, visina);
+            g.DrawRectangle(new Pen(b), x, y, širina, visina);
+        }
+
+        protected override void Popuni(Graphics g)
+        {
+            g.FillRectangle(new SolidBrush(i), x, y, širina, visina);
         }
 
         public override void Pomakni(float deltaX, float deltaY)
@@ -27,9 +41,5 @@
             visina *= faktor;
         }
 
-        private float x;
-        private float y;
-        private float širina;
-        private float visina;
     }
 }
