@@ -1,19 +1,24 @@
 ﻿namespace Vsite.CSharp.Metode
 {
-    // TODO:120 U klasu MojaProširenja dodati metodu proširenja (extension method) BrojRiječi klasi string koja kao rezultat vraća broj riječi
+    // :120 U klasu MojaProširenja dodati metodu proširenja (extension method) BrojRiječi klasi string koja kao rezultat vraća broj riječi
     public static class MojaProširenja
     {
+        public static int BrojRiječi(this string tekst)
+        {
+            return tekst.Split(new char[] { ' ', '.', ',' }, StringSplitOptions.RemoveEmptyEntries).Length;
+        }
+
     }
 
     static class MetodeProširenja
     {
         public static int DajBrojRiječi(string tekst)
         {
-            // TODO:121 Zamijeniti povratnu vrijednost rezultatom metode proširenja BrojRiječi. Pokrenuti program i provjeriti ispise.
-            return 0;
+            // :121 Zamijeniti povratnu vrijednost rezultatom metode proširenja BrojRiječi. Pokrenuti program i provjeriti ispise.
+            return tekst.BrojRiječi();
         }
 
-        // TODO:122 Pokrenuti i provjeriti testove (4 testa u grupi TestMetodeProširenja moraju proći).
+        // :122 Pokrenuti i provjeriti testove (4 testa u grupi TestMetodeProširenja moraju proći).
 
         static void Main()
         {
